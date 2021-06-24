@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<!-- Required Meta Tags -->
+
+    <!-- é a codificação de caracteres mais comum da World Wide Web. Cada caractere é representado por um a quatro bytes. UTF-8 é compatível com versões anteriores do ASCII e pode representar qualquer caractere Unicode padrão. -->
+    <meta charset="utf-8"> 
+
+    <!--
+    A tag viewport prepara o arquivo para aplicações responsivas
+    A tag content width iguala a largura do layout a largura do dispositivo
+    A tag initial scale 1 define a escala do layout, no caso, 1:1
+    A tag shrink to fit no faz a tela permanecer no tamanho esperado
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Minha CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- Google fonts e outros -->
+    
+
+
+    <title>Curso Boostrap</title>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+
+    <p class="h1 font-weight-bold text-center mt-5 mb-5">CURSO BOOTSTRAP</p>
+
+    <div>
+        <h1 class="text-center font-weight-bold">CONTAINER</h1>
+
+        <p class="text-center">Container Normal - Possui uma largura responsiva em pixel</p>
+        <div class="container">
+            <div class="row">
+                <div class="bg col">
+
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center">Container Normal - Exemplo com 04 rows</p>
+        <div class="container">
+            <div class="row">
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center">Container Normal - Exemplo com 12 rows</p>
+        <div class="container">
+            <div class="row">
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center">Container Normal - É possível centralizar as rows mesmo quando elas não somarem 12, utilizando "justify-content-center" na row</p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="bg col-2">
+                </div>
+                <div class="bg col-5">
+                </div>
+                <div class="bg col-3">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div>
+        <h1 class="text-center font-weight-bold">CONTAINER FLUID</h1>
+
+        <p class="text-center">Container Fluid - Possui width 100% em todas viewports e tamanhos de dispositivos</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="bg col">
+
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center">Container Fluid - Exemplo com 04 rows</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+                <div class="bg col">
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center">Container Fluid - Exemplo com 12 rows</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="bg col-1">
+                </div>
+                <div class="bg col-1">
+                </div>
+                <div class="bg col-1">
+                </div>
+                <div class="bg col-1">
+                </div>
+                <div class="bg col-1">
+                </div>
+                <div class="bg col-1">
+                </div>
+                <div class="bg col-1">
+                </div>
+                <div class="bg col-1">
+                </div>
+                <div class="bg col-1">
+                </div>
+                <div class="bg col-1">
+                </div>
+                <div class="bg col-1">
+                </div>
+                <div class="bg col-1">
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center">Container Fluid - É possível indicar o tamanho das rows de 01 até 12 Ex: col-3, col-6, col-3</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="bg col-3">
+                </div>
+                <div class="bg col-6">
+                </div>
+                <div class="bg col-3">
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center">Container Fluid - É possível utilizar o atributo order para alterar a ordem das rows ***</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="bg-1 my-auto col-4 order-1">
+                    <h3 class="text-center text-white">Primeiro item</h3>
+                </div>
+                <div class="bg-1 col-4 order-3">
+                    <h3 class="text-center text-white">Segundo item</h3>
+                </div>
+                <div class="bg-1 col-4 order-2">
+                    <h3 class="text-center text-white">Terceiro item</h3>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center">Container</p>
+        <div class="container">
+            <div class="row">
+                <div class="bg-1 col-sm-12 col-xl-4">
+                </div>
+                <div class="bg-1 col-sm-12 col-xl-4">
+                </div>
+                <div class="bg-1 col-sm-12 col-xl-4">
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center">Container-fluid</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="bg-1 col-sm-12 col-xl-4">
+                </div>
+                <div class="bg-1 col-sm-12 col-xl-4">
+                </div>
+                <div class="bg-1 col-sm-12 col-xl-4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="mt-5 mb-5">
+        <p class="h1 text-center font-weight-bold">Tipografia</p>
+        <p class="h1 text-center">h1. Bootstrap heading</p>
+        <p class="h2 text-center">h2. Bootstrap heading</p>
+        <p class="h3 text-center">h3. Bootstrap heading</p>
+        <p class="h4 text-center">h4. Bootstrap heading</p>
+        <p class="h5 text-center">h5. Bootstrap heading</p>
+        <p class="h6 text-center">h6. Bootstrap heading</p>
+    </div>
+
+    <hr>
+
+    <div class="mt-5 mb-5">
+        <p class="h1 text-center font-weight-bold">Códigos</p>
+        <p class="h2 text-center">Código Inline</p>
+        <p class="h3 text-center">Por exemplo, <code>&lt;section&gt;</code> envolvido inline.</p>
+
+        <hr>
+
+        <p class="h2 text-center">Blocos de Código Multilinhas</p>
+        <div class="text-center">
+        <pre><code>&lt;p&gt;Texto simples...&lt;/p&gt;
+&lt;p&gt; E outra linha com texto simples...&lt;/p&gt;
+        </code></pre>
+        </div>
+
+        <hr>
+
+        <p class="h2 text-center">Variáveis</p>
+        <div class="text-center">
+            <var>y</var> - <var>m</var><var>x</var> + <var>b</var>
+        </div>
+
+        <hr>
+
+        <p class="h2 text-center">Inputs do Usuário</p>
+        <p class="text-center">Para mudar o diretório, digite <kbd>cd</kbd>seguido do nome do diretório
+        <br>
+        Para o menu de opções, digite <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+        </p>
+
+        <hr>
+
+        <p class="h2 text-center">Amostra</p>
+        <div class="text-center">
+            <samp>Este texto deve ser tratado como um exemplo.</samp>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="mt-5 mb-5">
+        <p class="h1 text-center font-weight-bold">Imagem</p>
+        <p class="text-center">Adicionar a classe img-fluid para deixar a imagem responsiva</p>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="img/img-1.jpg" class="img-fluid">
+                </div>
+            </div>
+
+            <p class="text-center">Adicionar a classe img-thumbnail para adicionar borda</p>
+            <div class="row">
+                <div class="col">
+                    <img src="img/img-1.jpg" class="img-thumbnail">
+                </div>
+            </div>
+
+            <p class="text-center">Adicionar a classe img-thumbnail rounded para adicionar borda arredondada</p>
+            <div class="row">
+                <div class="col">
+                    <img src="img/img-1.jpg" class="img-thumbnail rounded">
+                </div>
+            </div>
+
+            <p class="text-center">Adicionar a classe float para alinhar a esquerda e direita</p>
+            <div class="row">
+                <div class="col">
+                    <img src="img/img-2.png" class="img-thumbnail rounded float-left">
+                </div>
+                <div class="col">
+                    <img src="img/img-2.png" class="img-thumbnail rounded float-right">
+                </div>
+            </div>
+
+            <p class="text-center">Para centralizar a imagem, adicionar a classe mx-auto e d-block</p>
+            <div class="row">
+                <div class="col">
+                    <img src="img/img-2.png" class="img-fluid mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <hr>
+
+    <div class="mt-5 mb-5">
+        <p class="h1 text-center">Figures</p>
+        <p class="text-center">Pra centralizar a img, utilizar CSS:
+            <br>
+            <code>display: table;
+            <br>
+            margin-right: auto;
+            <br>
+            margin-left: auto;</code>
+            <p class="text-center">Sempre que precisar exibir um pedaço de texto junto a uma imagem, como por exemplo em uma legenda, considere usar uma tag <code>&lt;figure&gt;</code>.</p>
+            <p class="text-center">Exemplos:</p>
+            <figure class="figure alinhamento-figure">
+                <img src="img/img-2.png" class="figure-img img-fluid rounded" alt="Uma imagem de espaço reservado quadrada, genérica e com cantos arredondados.">
+                <figcaption class="figure-caption">Uma legenda para a imagem acima.</figcaption>
+            </figure>
+            <br>
+        <p class="text-center">Você também pode mudar o alinhamento da legenda através de um <b>Utilitário de Texto</b>.
+            <figure class="figure alinhamento-figure">
+                <img src="./img/img-2.png" class="figure-img img-fluid rounded" alt="Uma imagem de espaço reservado quadrada, genérica e com cantos arredondados.">
+                <figcaption class="figure-caption text-right">Uma legenda para a imagem acima.</figcaption>
+            </figure>
+    </div>
+
+    <hr>
+
+    <div class="mt-5 mb-5">
+        <p class="h1 text-center">Tabelas</p>
+        <p class="text-center">Adicionar a classe <code>table</code> para formatar a tabela</p>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Primeiro Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Nome de Usuário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p class="mt-5 text-center">Adicionar a classe <code>table table-inverse</code> para inverter as cores da tabela.</p>
+            <div class="row">
+                <div class="col">
+                    <table class="table table-inverse">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Primeiro Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Nome de Usuário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p class="mt-5 text-center">Adicionar a classe <code>thead-inverse</code> para inverter apenas as cores do cabeçalho.</p>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead class="thead-inverse">
+                            <tr>
+                                <th>#</th>
+                                <th>Primeiro Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Nome de Usuário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p class="mt-5 text-center">Adicionar a classe <code>thead-default</code> para deixar o cabeçalho em cor padrão.</p>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead class="thead-default">
+                            <tr>
+                                <th>#</th>
+                                <th>Primeiro Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Nome de Usuário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p class="mt-5 text-center">Adicionar a classe <code>table-striped</code> para deixar as linhas em listras.</p>
+            <div class="row">
+                <div class="col">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Primeiro Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Nome de Usuário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <table class="table table-striped table-inverse">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Primeiro Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Nome de Usuário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p class="mt-5 text-center">Adicionar a classe <code>table-bordered</code> para adicionar bordas nas caixas.</p>
+            <div class="row">
+                <div class="col">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Primeiro Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Nome de Usuário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <table class="table table-bordered table-inverse">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Primeiro Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Nome de Usuário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p class="mt-5 text-center">Adicionar a classe <code>table-hover</code> para efeito hover na linha.</p>
+            <div class="row">
+                <div class="col">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Primeiro Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Nome de Usuário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <table class="table table-hover table-inverse">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Primeiro Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Nome de Usuário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p class="mt-5 text-center">Adicionar a classe <code>table-sm</code> para compactar a tabela.</p>
+            <div class="row">
+                <div class="col">
+                    <table class="table table-hover table-sm">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Primeiro Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Nome de Usuário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <table class="table table-hover table-inverse table-sm">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Primeiro Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Nome de Usuário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p class="mt-5 text-center">Adicionar a classe <code>table + função</code> no <code>tr</code> para "colorir" a linha.
+                <br>
+                <b>*</b>É possível adicionar a cor em campos individuais quando necessário, adicionando <code>table + função</code> no <code>td</code> <i>(table data)</i> do campo </p>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Primeiro Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Nome de Usuário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-active">
+                                <th scope="row">Ativo</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Padrão</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="table-primary">
+                                <th scope="row">Primário</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <th scope="row">Secundário</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="table-success">
+                                <th scope="row">Sucesso</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="table-danger">
+                                <th scope="row">Perigo</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="table-warning">
+                                <th scope="row">Atenção</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="table-info">
+                                <th scope="row">Informação</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="table-light">
+                                <th scope="row">Luz</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="table-dark">
+                                <th scope="row">Sombrio</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <p class="mt-5 text-center">Na <code>table-inverse</code>é necessário adicionar <code>bg+função</code> para melhor estilização.</p>
+            <div class="row">
+                <div class="col">
+                    <table class="table table-inverse">
+                        <thead>
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Primeiro Nome</th>
+                                <th>Sobrenome</th>
+                                <th>Nome de Usuário</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-active">
+                                <th scope="row">Ativo</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Padrão</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="bg-primary">
+                                <th scope="row">Primário</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="bg-secondary">
+                                <th scope="row">Secundário</th>
+                                <td>Nome01</td>
+                                <td>Sobrenome01</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="bg-success">
+                                <th scope="row">Sucesso</th>
+                                <td>Nome02</td>
+                                <td>Sobrenome02</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="bg-danger">
+                                <th scope="row">Perigo</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="bg-warning">
+                                <th scope="row">Atenção</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="bg-info">
+                                <th scope="row">Informação</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="bg-light">
+                                <th scope="row">Luz</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                            <tr class="bg-dark">
+                                <th scope="row">Sombrio</th>
+                                <td>Nome03</td>
+                                <td>Sobrenome03</td>
+                                <td>@username</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="mt-5 mb-5">
+        <p class="h1 text-center font-weight-bold">Componentes</p>
+        <p class="h2 text-center">Alertas</p>
+        <p class="text-center"><code>alert</code></p>
+        <p class="text-center">Seguem a mesma estrutura de cores das tabelas</p>
+        <p class="text-center font-italic">*São alertas visuais, não impactam tecnologias assistidas.</p>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-primary" role="alert">
+                        Texto do alert! <a href="#" class="alert-link">Link do Alert</a> Clique para acessar!
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-secondary" role="alert">
+                        Texto do alert! <a href="#" class="alert-link">Link do Alert</a> Clique para acessar!
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-success" role="alert">
+                        Texto do alert! <a href="#" class="alert-link">Link do Alert</a> Clique para acessar!
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-danger" role="alert">
+                        Texto do alert! <a href="#" class="alert-link">Link do Alert</a> Clique para acessar!
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-warning" role="alert">
+                        Texto do alert! <a href="#" class="alert-link">Link do Alert</a> Clique para acessar!
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-info" role="alert">
+                        Texto do alert! <a href="#" class="alert-link">Link do Alert</a> Clique para acessar!
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-light" role="alert">
+                        Texto do alert! <a href="#" class="alert-link">Link do Alert</a> Clique para acessar!
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-dark" role="alert">
+                        Texto do alert! <a href="#" class="alert-link">Link do Alert</a> Clique para acessar!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="h3 text-center mt-5">Alerta com heading e texto</p>
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col-12">
+                    <div class="alert alert-info" role="alert">
+                        <h4 class="alert-heading">Título do Alert</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sequi praesentium corporis,
+                            possimus iusto dignissimos accusantium perspiciatis esse minus dolor ratione accusamus ad
+                            maiores et sunt corrupti ullam animi. Ex!</p>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur adipisci corrupti
+                            dolor nisi possimus, laboriosam culpa ipsam! Maiores inventore optio voluptatibus consequatur,
+                            voluptatum excepturi iure aliquid nesciunt laborum exercitationem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="h3 text-center mt-5">Alerta com botão de close, utilizando a classe <code>alert-dismissible</code>.</p>
+        <p class="text-center">*É necessário adicionar um <code>button</code></p>
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col-12">
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="alert-heading">Título do Alert</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sequi praesentium corporis,
+                            possimus iusto dignissimos accusantium perspiciatis esse minus dolor ratione accusamus ad
+                            maiores et sunt corrupti ullam animi. Ex!</p>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur adipisci corrupti
+                            dolor nisi possimus, laboriosam culpa ipsam! Maiores inventore optio voluptatibus consequatur,
+                            voluptatum excepturi iure aliquid nesciunt laborum exercitationem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="mt-5 mb-5">
+        <p class="h1 text-center font-weight-bold">Badges</p>
+        <p class="h2 text-center">Notificações</p>
+        <p class="text-center"><code>badge + função</code></p>
+        <p class="text-center font-italic">*A escala de tamanho coincide com o elemento pai.</p>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <br>
+                    <h1 class="text-center">Exemplo de cabeçalho <span class="badge badge-primary">Novo</span></h1>
+                    <h2 class="text-center">Exemplo de cabeçalho <span class="badge badge-secondary">Novo</span></h2>
+                    <h3 class="text-center">Exemplo de cabeçalho <span class="badge badge-success">Novo</span></h3>
+                    <h4 class="text-center">Exemplo de cabeçalho <span class="badge badge-danger">Novo</span></h4>
+                    <h5 class="text-center">Exemplo de cabeçalho <span class="badge badge-warning">Novo</span></h5>
+                    <h6 class="text-center">Exemplo de cabeçalho <span class="badge badge-info">Novo</span></h6>
+                    <h6 class="text-center">Exemplo de cabeçalho <span class="badge badge-light">Novo</span></h6>
+                    <h6 class="text-center">Exemplo de cabeçalho <span class="badge badge-dark">Novo</span></h6>
+                </div>
+            </div>
+        </div>
+
+        <p class="h2 text-center mt-5">Os badges também podem ser utilizados em botões</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mt-3 text-center">
+                        <button class="btn">
+                            <h1>Notificações <span class="badge badge-primary">5</span></h1>
+                        </button>
+                        <br>
+                        <button class="btn">
+                            <h2>Notificações <span class="badge badge-secondary">5</span></h2>
+                        </button>
+                        <br>
+                        <button class="btn">
+                            <h3>Notificações <span class="badge badge-success">5</span></h3>
+                        </button>
+                        <br>
+                        <button class="btn">
+                            <h4>Notificações <span class="badge badge-danger">5</span></h4>
+                        </button>
+                        <br>
+                        <button class="btn">
+                            <h5>Notificações <span class="badge badge-warning">5</span></h5>
+                        </button>
+                        <br>
+                        <button class="btn">
+                            <h6>Notificações <span class="badge badge-info">5</span></h6>
+                        </button>
+                        <br>
+                        <button class="btn">
+                            <h6>Notificações <span class="badge badge-light">5</span></h6>
+                        </button>
+                        <br>
+                        <button class="btn">
+                            <h6>Notificações <span class="badge badge-dark">5</span></h6>
+                        </button>
+                    </div>
+                </div>       
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="mt-5 h1 text-center">Breadcrumbs</p>
+    <p class="h2 text-center">Hierarquia de páginas</p>
+    <p class="text-center"><code>ol + breadcrumb</code> na lista</p>
+    <p class="text-center"><code>li + breadcrumb-item</code> no item</p>
+    <p class="text-center"><code>active</code> na página ativa</p>
+    <p class="text-center font-italic">*Não esquecer de linkar as páginas "anteriores" para acesso.</p>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active">Home</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Biblioteca</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Biblioteca</a></li>
+                    <li class="breadcrumb-item active">Livro X</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-center mt-5"> É indicado utilizar o breadcrumb na tag <code>nav</code> para a navegação primária do site.
+    <br>
+    Caso seja a navegação segundária, utilizar a lista ordenada do exemplo anterior.</p>
+    <div class="container mt-3 mb-5">
+        <div class="row">
+            <div class="col-12">
+                <nav class="breadcrumb">
+                    <a href="#" class="breadcrumb-item">Home</a>
+                    <a href="#" class="breadcrumb-item">Biblioteca</a>
+                    <a href="#" class="breadcrumb-item">Livro X</a>
+                    <span class="breadcrumb-item active">Bootstrap</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="mt-5 h1 text-center">Botões</p>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <p class="text-center"><code>btn + função</code></p>
+                    <button class="btn btn-primary">Primário</button>
+                    <a href="#" class="btn btn-secondary" role="button">Secundário</a>
+                    <input type="button" class="btn btn-success" value="Success">
+                    <input type="submit" class="btn btn-danger" value="Danger">
+                    <input type="reset" class="btn btn-warning" value="Warning">
+                    <button class="btn btn-info">Informação</button>
+                    <button class="btn btn-light">Luz</button>
+                    <button class="btn btn-dark">Sombrio</button>
+                    <button class="btn btn-link">Link</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <p class="text-center"><code>btn-outline</code></p>
+                        <button class="btn btn-outline-primary">Primário</button>
+                        <a href="#" class="btn btn-outline-secondary" role="button">Secundário</a>
+                        <input type="button" class="btn btn-outline-success" value="Success">
+                        <input type="submit" class="btn btn-outline-danger" value="Danger">
+                        <input type="reset" class="btn btn-outline-warning" value="Warning">
+                        <button class="btn btn-outline-info">Informação</button>
+                        <button class="btn btn-outline-light">Luz</button>
+                        <button class="btn btn-outline-dark">Sombrio</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <p class="text-center"><code>btn-lg e btn-sm</code></p>
+                        <button class="btn btn-outline-primary btn-lg">Primário</button>
+                        <a href="#" class="btn btn-outline-secondary btn-sm" role="button">Secundário</a>
+                        <input type="button" class="btn btn-outline-success" value="Success">
+                        <input type="submit" class="btn btn-outline-danger" value="Danger">
+                        <input type="reset" class="btn btn-outline-warning" value="Warning">
+                        <button class="btn btn-outline-info">Informação</button>
+                        <button class="btn btn-outline-light">Luz</button>
+                        <button class="btn btn-outline-dark">Sombrio</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center"><code>btn-block</code>ocupa toda a área do elemento pai, no caso o <code>col-12</code></p>
+                    <button class="btn btn-outline-primary btn-block">Primário</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <p class="text-center">O bootstrap possibilita definir o status do botão: <code>default, active e disabled.</code></p>
+                        <button class="btn btn-primary">Primário</button>
+                        <button class="btn btn-primary active">Primário</button>
+                        <button class="btn btn-primary" disabled>Primário</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <p class="text-center font-weight-bold">Botão Link</p>
+                        <p class="text-italic">*No caso de links, sempre informar o <code>role</code>, e adicionar o atributo <code>aria</code>para acessibilidade.</p>
+                        <button class="btn btn-primary">Primário</button>
+                        <button class="btn btn-primary active">Primário</button>
+                        <a class="btn btn-primary disabled" role="button" aria-disabled="true">Primário</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="mt-5 h1 text-center">Grupo de Botões</p>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <p class="text-center"><code>btn-group</code></p>
+                    <div class="btn-group" role="group" aria-label="Exemplo">
+                        <button class="btn btn-primary">Esquerdo</button>
+                        <button class="btn btn-primary">Centro</button>
+                        <button class="btn btn-primary">Direito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <p class="text-center"><code>btn-group-lg</code></p>
+                    <div class="btn-group-lg" role="group" aria-label="Exemplo">
+                        <button class="btn btn-primary">Esquerdo</button>
+                        <button class="btn btn-primary">Centro</button>
+                        <button class="btn btn-primary">Direito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <p class="text-center"><code>btn-group-sm</code></p>
+                    <div class="btn-group-sm" role="group" aria-label="Exemplo">
+                        <button class="btn btn-primary">Esquerdo</button>
+                        <button class="btn btn-primary">Centro</button>
+                        <button class="btn btn-primary">Direito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <p class="text-center"><code>btn-toolbar</code></p>
+                    <div class="toolbar" role="toolbar" aria-label="Toolbar de botões">
+                        <div class="btn-group" role="group" aria-label="Primeiro Grupo">
+                            <button class="btn btn-secondary">1</button>
+                            <button class="btn btn-secondary">2</button>
+                            <button class="btn btn-secondary">3</button>
+                        </div>
+                        <div class="btn-group" role="group" aria-label="Segundo Grupo">
+                            <button class="btn btn-secondary">4</button>
+                            <button class="btn btn-secondary">5</button>
+                            <button class="btn btn-secondary">6</button>
+                        </div>
+                        <div class="btn-group" role="group" aria-label="Terceiro Grupo">
+                            <button class="btn btn-secondary">7</button>
+                            <button class="btn btn-secondary">8</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <p class="text-center"><code>btn-group-vertical</code></p>
+                    <div class="btn-group-vertical" role="group" aria-label="Exemplo">
+                        <button class="btn btn-primary">Esquerdo</button>
+                        <button class="btn btn-primary">Centro</button>
+                        <button class="btn btn-primary">Direito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="mt-5 h1 text-center">Cards</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                    <p class="text-center"><code>card</code> + <code>card-body</code></p>
+                    <div class="card">
+                        <div class="card-body">
+                        Este é um texto no corpo do card.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center"><code>card-title</code> + <code>card-subtitle</code> + <code>card-text</code> + <code>card-link</code></p>
+                <p class="text-center text-italic">*Utilizei <code>mx-auto</code>no <code>card</code> para centralizá-lo.</p>
+                <p class="text-center text-italic">*Atributo <code>text-muted</code> no subtítulo para efeito "desativado".</p>
+                <div class="mt-3 card mx-auto" style="width: 20rem;">
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Subtítulo do Card</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cum, dolorum corrupti quisquam magnam voluptate obcaecati labore, placeat unde quibusdam
+                        libero tenetur beatae sunt velit saepe! Laboriosam itaque optio eveniet quasi!</p>
+                        <a href="#" class="card-link">Link do Card</a>
+                        <a href="#" class="card-link">Outro Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p class="mt-5 text-center"><code>card-img-top</code></p>
+                <div class="card mx-auto" style="width: 20rem;">
+                    <img src="./img/img-1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Subtítulo do Card</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cum, dolorum corrupti quisquam magnam voluptate obcaecati labore, placeat unde quibusdam
+                        libero tenetur beatae sunt velit saepe! Laboriosam itaque optio eveniet quasi!</p>
+                        <a href="#" class="card-link">Link do Card</a>
+                        <a href="#" class="card-link">Outro Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p class="mt-5 text-center"><code>list-group</code> + <code>list-group-flush</code> + <code>list-group-item</code>.</p>
+                <div class="card mx-auto" style="width: 20rem;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Item Lista 1</li>
+                        <li class="list-group-item">Item Lista 2</li>
+                        <li class="list-group-item">Item Lista 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p class="mt-5 text-center">Card com Lista.</p>
+                <p class="mb-2 text-center">Basta adicionar a lista entre o texto e os links.</p>
+                
+                <div class="card mx-auto" style="width: 20rem;">
+                    <img src="./img/img-1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Subtítulo do Card</h6>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cum, dolorum corrupti quisquam magnam voluptate obcaecati labore, placeat unde quibusdam
+                        libero tenetur beatae sunt velit saepe! Laboriosam itaque optio eveniet quasi!</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Item Lista 1</li>
+                        <li class="list-group-item">Item Lista 2</li>
+                        <li class="list-group-item">Item Lista 3</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Link do Card</a>
+                        <a href="#" class="card-link">Outro Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p class="mt-5 text-center"><code>card-header</code> + <code>card-footer</code>.</p>
+                <p class="text-center font-italic">*<code>text-muted</code>no footer para efeito "desativado.</p>
+                <div class="card text-center">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <p class="mt-5 text-center"><code>card-img-bottom</code>.</p>
+                <p class="font-italic text-center">*Para centralizar, utilizei a tag <code>mx-auto</code> em <code>col-6</code></p>
+                <div class="card text-center">
+                    <div class="card-header">Destaque</div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <img src="./img/img-1.jpg" class="card-img-bottom">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <p class="mt-5 text-center"><code>card-img-overlay</code>.</p>
+                <p class="font-italic text-center">*Para centralizar, utilizei a tag <code>mx-auto</code> em <code>col-6</code></p>
+                <div class="card bg-dark text-white">
+                    <img src="./img/img-1.jpg" class="card-img">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Cum, dolorum corrupti quisquam magnam voluptate obcaecati labore, placeat unde quibusdam
+                            libero tenetur beatae sunt velit saepe! Laboriosam itaque optio eveniet quasi!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="mt-5 text-center"><code>bg + primary/secondary/success/danger/warning/info/light/dark</code>.</p>
+        <div class="row">
+            <div class="col-4">
+                <div class="card mb-2 text-white bg-primary">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-white bg-secondary">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-white bg-success">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mb-2 text-white bg-danger">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-white bg-warning">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-white bg-info">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card bg-light">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-light bg-dark">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+        </div>
+
+        <p class="mt-5 text-center"><code>border + primary/secondary/success/danger/warning/info/light/dark</code></p>
+        <p class=" text-center text-italic">No primeiro cartão foi aplicado<code>text-primary</code></p>
+        <div class="row">
+            <div class="col-4">
+                <div class="card mb-2 border-primary">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body text-primary">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card border-secondary">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card border-success">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card mb-2 border-danger">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card border-warning">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card border-info">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card border-light">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card border-dark">
+                    <div class="card-header">
+                        Destaque
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Título do Card</h4>
+                        <p class="card-text">Conteúdo auxiliar do card</p>
+                        <a href="#" class="btn btn-primary">Acessar!</a>
+                    </div>
+                    <div class="card-footer text-muted">Há 2 dias</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p class="mt-5 mb-3 text-center"><code>card-group</code></p>
+                <div class="card-group">
+                    <div class="card">
+                        <img src="./img/img-1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Subtítulo do Card</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Cum, dolorum corrupti quisquam magnam voluptate obcaecati labore, placeat unde quibusdam
+                            libero tenetur beatae sunt velit saepe! Laboriosam itaque optio eveniet quasi!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/img-1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Subtítulo do Card</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Cum, dolorum corrupti quisquam magnam voluptate obcaecati labore, placeat unde quibusdam
+                            libero tenetur beatae sunt velit saepe! Laboriosam itaque optio eveniet quasi!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/img-1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Subtítulo do Card</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Cum, dolorum corrupti quisquam magnam voluptate obcaecati labore, placeat unde quibusdam
+                            libero tenetur beatae sunt velit saepe! Laboriosam itaque optio eveniet quasi!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p class="mt-5 mb-3 text-center"><code>card-deck</code></p>
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="./img/img-1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Subtítulo do Card</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Cum, dolorum corrupti quisquam magnam voluptate obcaecati labore, placeat unde quibusdam
+                            libero tenetur beatae sunt velit saepe! Laboriosam itaque optio eveniet quasi!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/img-1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Subtítulo do Card</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Cum, dolorum corrupti quisquam magnam voluptate obcaecati labore, placeat unde quibusdam
+                            libero tenetur beatae sunt velit saepe! Laboriosam itaque optio eveniet quasi!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/img-1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Subtítulo do Card</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Cum, dolorum corrupti quisquam magnam voluptate obcaecati labore, placeat unde quibusdam
+                            libero tenetur beatae sunt velit saepe! Laboriosam itaque optio eveniet quasi!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <p class="mt-5 mb-3 text-center"><code>card-columns</code></p>
+                <div class="card-columns">
+                    <div class="card">
+                        <img src="./img/img-1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Subtítulo do Card</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Cum, dolorum corrupti quisquam magnam voluptate obcaecati labore, placeat unde quibusdam
+                            libero tenetur beatae sunt velit saepe! Laboriosam itaque optio eveniet quasi!</p>
+                        </div>
+                    </div>
+                    <div class="card border-success">
+                        <div class="card-header">
+                            Destaque
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">Conteúdo auxiliar do card</p>
+                            <a href="#" class="btn btn-primary">Acessar!</a>
+                        </div>
+                        <div class="card-footer text-muted">Há 2 dias</div>
+                    </div>
+                    <div class="card border-info">
+                        <div class="card-header">
+                            Destaque
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <p class="card-text">Conteúdo auxiliar do card</p>
+                            <a href="#" class="btn btn-primary">Acessar!</a>
+                        </div>
+                        <div class="card-footer text-muted">Há 2 dias</div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/img-1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Subtítulo do Card</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Cum, dolorum corrupti quisquam magnam voluptate obcaecati labore, placeat unde quibusdam
+                            libero tenetur beatae sunt velit saepe! Laboriosam itaque optio eveniet quasi!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/img-1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h4 class="card-title">Título do Card</h4>
+                            <h6 class="card-subtitle mb-2 text-muted">Subtítulo do Card</h6>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Cum, dolorum corrupti quisquam magnam voluptate obcaecati labore, placeat unde quibusdam
+                            libero tenetur beatae sunt velit saepe! Laboriosam itaque optio eveniet quasi!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="mt-5 h1 text-center font-weight-bold">Carrossel</p>
+    <p class="text-center"><code>carousel slide</code> *sem hífen entre os termos</p>
+    <p class="text-center font-italic">Necessário o atributo <code>data-ride="carousel"</code>para funcionar</p>
+    <p class="text-center font-italic">Necessário adicionar as classes utilitárias <code>d-block</code>e <code>w-100</code> em <code>img</code>para funcionar</p>
+    <p class="text-center font-italic">Necessário ativar o primeiro slide com <code>active</code></p>
+    <p class="text-center font-italic">Necessário a div <code>carousel-inner</code>para elementos internos</p>
+    <p class="text-center font-italic">Necessário a div <code>carousel-item</code>para elementos itens</p>
+    <p class="text-center font-italic">adicionei o style <code>max-height</code>para manter os elementos com a mesma altura</p>
+    <p class="mb-3 text-center font-italic">Também é possível alterar a velocidade de intervalo dos slides com JS</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="carousel-slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="max-height:200px;">
+                            <img class="d-block w-100" src="./img/img-1.jpg">
+                        </div>
+                        <div class="carousel-item" style="max-height:200px;">
+                            <img class="d-block w-100" src="./img/img-2.png">
+                        </div>
+                        <div class="carousel-item" style="max-height:200px;">
+                            <img class="d-block w-100" src="./img/img-3.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="mt-5 text-center">Carrossel com controles</p>
+    <p class="text-center"><code>carousel-control-prev/next</code></p>
+    <p class="text-center">Para o carrossel funcionar, é necessário adicionar um<code>id</code>no atributo <code>carousel-slide</code></p>
+    <p class="mb-3 text-center">Adicionar o nome do id - no caso "#controleCarrossel - no <code>href</code> dos controles</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="controleCarrossel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="max-height:200px;">
+                            <img class="d-block w-100" src="./img/img-1.jpg">
+                        </div>
+                        <div class="carousel-item" style="max-height:200px;">
+                            <img class="d-block w-100" src="./img/img-2.png">
+                        </div>
+                        <div class="carousel-item" style="max-height:200px;">
+                            <img class="d-block w-100" src="./img/img-3.jpg">
+                        </div>
+                        <a href="#controleCarrossel" class="carousel-control-prev" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!-- Span visual -->
+                            <span class="sr-only">Voltar</span> <!-- Tecnologias assistidas -->
+                        </a>
+                        <a href="#controleCarrossel" class="carousel-control-next" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span> <!-- Span visual -->
+                            <span class="sr-only">Avançar</span> <!-- Tecnologias assistidas -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="mt-5 text-center">Carrossel com indicadores abaixo</p>
+    <p class="text-center"><code>carousel-indicator</code></p>
+    <p class="mb-3 text-center">Para ativar essa função, é necessário criar uma lista ordenada<code>ol</code>com<code>li data-target="id_do_carrossel"</code>e um <code>data-target="0"</code> com <code>class="active"</code>no primeiro slide.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="controleCarrossel1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#controleCarrossel1" data-slide-to="0" class="active"></li>
+                        <li data-target="#controleCarrossel1" data-slide-to="1"></li>
+                        <li data-target="#controleCarrossel1" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="max-height:200px;">
+                            <img class="d-block w-100" src="./img/img-1.jpg">
+                        </div>
+                        <div class="carousel-item" style="max-height:200px;">
+                            <img class="d-block w-100" src="./img/img-2.png">
+                        </div>
+                        <div class="carousel-item" style="max-height:200px;">
+                            <img class="d-block w-100" src="./img/img-3.jpg">
+                        </div>
+                        <a href="#controleCarrossel1" class="carousel-control-prev" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!-- Span visual -->
+                            <span class="sr-only">Voltar</span> <!-- Tecnologias assistidas -->
+                        </a>
+                        <a href="#controleCarrossel1" class="carousel-control-next" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span> <!-- Span visual -->
+                            <span class="sr-only">Avançar</span> <!-- Tecnologias assistidas -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="mt-5 text-center">Carrossel com Legendas</p>
+    <p class="text-center"><code>carousel-caption</code></p>
+    <p class="mb-3 text-center">Para ativar essa função, adicionar os atributos<code>d-none</code>e<code>d-md-block</code>abaixo da tag img</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="controleCarrossel2" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#controleCarrossel2" data-slide-to="0" class="active"></li>
+                        <li data-target="#controleCarrossel2" data-slide-to="1"></li>
+                        <li data-target="#controleCarrossel2" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" style="max-height:200px;">
+                            <img class="d-block w-100" src="./img/img-1.jpg">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Primeiro título do slide</h3>
+                                <p>Subtítulo do slide</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="max-height:200px;">
+                            <img class="d-block w-100" src="./img/img-2.png">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Segundo título do slide</h3>
+                                <p>Subtítulo do slide</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="max-height:200px;">
+                            <img class="d-block w-100" src="./img/img-3.jpg">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Terceiro título do slide</h3>
+                                <p>Subtítulo do slide</p>
+                            </div>
+                        </div>
+                        <a href="#controleCarrossel2" class="carousel-control-prev" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!-- Span visual -->
+                            <span class="sr-only">Voltar</span> <!-- Tecnologias assistidas -->
+                        </a>
+                        <a href="#controleCarrossel2" class="carousel-control-next" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span> <!-- Span visual -->
+                            <span class="sr-only">Avançar</span> <!-- Tecnologias assistidas -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Colapso</p>
+    <p class="text-center"><code>collapse</code></p>
+    <p class="text-center">Funciona tanto para links quanto para botões</p>
+    <p class="mb-3 text-center">Para utilizar esta função, é necessário um "disparador" - (data-toggle, no caso de links) e (data-target, no caso de botões) - , que é o <code>#id</code>da<code>div class="collapse"</code> e um conteúdo para mostrar/esconder</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center">
+                    <a href="#itemColapso1" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="itemColapso1">Disparador Href</a>
+                    <button class="btn btn-primary" data-toggle="collapse" type="button" data-target="#itemColapso1" aria-expanded="false" aria-controls="itemColapso1">Disparador Button</button>
+                </p>
+                <div class="collapse" id="itemColapso1">
+                    <div class="card card-body">
+                        Colapse1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsam ullam quas, nam nulla sequi deleniti!
+                        Magni provident aperiam corporis dolores exercitationem nisi, architecto eum saepe perferendis rerum soluta ex?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-center">Textos diferentes em cada button</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center">
+                    <a href="#itemColapso2" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="itemColapso2">Disparador Href</a>
+                    <button class="btn btn-primary" data-toggle="collapse" type="button" data-target="#itemColapso3" aria-expanded="false" aria-controls="itemColapso3">Disparador Button</button>
+                </p>
+                <div class="collapse" id="itemColapso2">
+                    <div class="card card-body">
+                        Colapse2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsam ullam quas, nam nulla sequi deleniti!
+                        Magni provident aperiam corporis dolores exercitationem nisi, architecto eum saepe perferendis rerum soluta ex?
+                    </div>
+                </div>
+                <div class="collapse" id="itemColapso3">
+                    <div class="card card-body">
+                        Colapse3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsam ullam quas, nam nulla sequi deleniti!
+                        Magni provident aperiam corporis dolores exercitationem nisi, architecto eum saepe perferendis rerum soluta ex?
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="mt-3 text-center">Acordeão</p>
+        <p class="text-center"><code></code></p>
+        <div class="row">
+            <div class="col-12">
+                <div id="accordion" role="tablist">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="header1">
+                            <h5 class="mb-0">
+                                <a href="#colapso4" data-toggle="collapse" aria-expanded="true" aria-controls="colapso4">
+                                    Link para colapso #4 
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="colapso4" class="collapse show" role="tabpanel" aria-labelledby="header1" data-parent="#accordion">
+                            <div class="card-body">
+                                <h5>Item colapso #4</h5>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Ducimus veniam dolore ullam, omnis quod ea exercitationem ex tempora
+                                repellat commodi tempore nemo distinctio harum sunt eum facere provident excepturi necessitatibus?
+                            </div>
+                        </div>
+                        <div class="card-header" role="tab" id="header2">
+                            <h5 class="mb-0">
+                                <a href="#colapso5" data-toggle="collapse" aria-expanded="true" aria-controls="colapso5">
+                                    Link para colapso #5
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="colapso5" class="collapse" role="tabpanel" aria-labelledby="header2" data-parent="#accordion">
+                            <div class="card-body">
+                                <h5>Item colapso #5</h5>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Ducimus veniam dolore ullam, omnis quod ea exercitationem ex tempora
+                                repellat commodi tempore nemo distinctio harum sunt eum facere provident excepturi necessitatibus?
+                            </div>
+                        </div>
+                        <div class="card-header" role="tab" id="header3">
+                            <h5 class="mb-0">
+                                <a href="#colapso6" data-toggle="collapse" aria-expanded="true" aria-controls="colapso6">
+                                    Link para colapso #6
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="colapso6" class="collapse" role="tabpanel" aria-labelledby="header3" data-parent="#accordion">
+                            <div class="card-body">
+                                <h5>Item colapso #6</h5>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Ducimus veniam dolore ullam, omnis quod ea exercitationem ex tempora
+                                repellat commodi tempore nemo distinctio harum sunt eum facere provident excepturi necessitatibus?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Dropdown</p>
+    <p class="text-center"><code>dropdown</code></p>
+    <p class="text-center"><code>dropdown-item</code></p>
+    <p class="mb-3 text-center">Pode ser utilizado tanto em links quanto em botões</p>
+    <p class="text-center">Utilizar a classe<code>dropdown-toggle</code>para mostrar/esconder</p>
+    <p class="text-center">Para separar um link, criar uma div fechada com a classe<code>dropdown-divider</code>e adicionar o link separado abaixo</p>
+    <p class="text-center">Para adicionar um cabeçalho ao dropdown, criar um título com a classe<code>dropdown-header</code></p>
+    <p class="text-center">Para desabilitar um link, adicionar a classe<code>disabled</code> ao <code>dropdown-item</code></p>
+    <p class="text-center">Não esquecer de adicionar um <code>id</code>para o disparador</p>
+
+    <p class="mb-3 text-center text-italic">Foi utilizado a classe <code>text-center</code>em<code>dropdown</code>para alinhar ao centro</p>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="dropdown text-center mb-3">
+                    <button id="button1" class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                    <div class="dropdown-menu" aria-labelledby="button1">
+                        <a class="dropdown-item" href="#">Link #1</a>
+                        <a class="dropdown-item" href="#">Link #2</a>
+                        <a class="dropdown-item" href="#">Link #3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="dropdown text-center">
+                    <a id="button2"class="btn btn-primary dropdown-toggle" href="#" role="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Link Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="button2">
+                        <h6 class="dropdown-header">Cabeçalho Dropdown</h6>
+                        <a class="dropdown-item" href="#">Link #1</a>
+                        <a class="dropdown-item disabled" href="#">Link #2</a>
+                        <a class="dropdown-item" href="#">Link #3</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Cabeçalho Separado</h6>
+                            <a class="dropdown-item" href="#">Link separado</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Formulários</p>
+    <p class="text-center"><code>form</code></p>
+    <p class="text-center">O bootstrap solicita que a gente envolva o <code>label</code> e o <code>input</code> do formulário dentro de uma <code>div</code> com <code>class="form-group"</code></p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <div class="form-group">
+                        <label for="inputEmail1">E-mail</label>
+                        <input type="email" name="inputEmail1" id="inputEmail1">
+                    </div>  
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr>
+    <p class="mt-5 mb-3"><b>*</b>Utilizar <code>text-center</code> para alinhamento central</p>
+    <p class="mt-3 mb-5"><b>*</b>Utilizar <code>mx-auto</code> na <code>col</code>para centralizar.</p>
+    </main>
+
+    <footer>
+    </footer>
+
+<!-- Scripts, quando não tiverem seu arquivo próprio, são adicionados abaixo do footer -->
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Meu JS. O atributo defer diz ao navegador para executar o script apenas quando a análise do html estiver finalizada -->
+    <script src="./js/index.js" defer></script>
+
+</body>
+</html>
