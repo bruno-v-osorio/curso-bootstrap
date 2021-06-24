@@ -1,0 +1,36 @@
+/* Asterisco atinge todos os elemetos da página */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+p {
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.bg {
+    background-color: grey;
+    height: 64px;
+    border: 1px solid #fff;
+}
+
+.bg-1 {
+    background-color: purple;
+    height: 64px;
+    border: 1px solid #fff;
+}
+
+.alinhamento-figure {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.alinhamento-texto-figure {
+    display: table;
+    caption-side: bottom;
+    text-align: center;
+}
