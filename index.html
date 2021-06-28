@@ -17,6 +17,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Iconic Icons -->
+    <link rel="stylesheet" href="iconic/font/css/open-iconic-bootstrap.css">
     <!-- Minha CSS -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <!-- Google fonts e outros -->
@@ -174,7 +176,7 @@
             </div>
         </div>
 
-        <p class="text-center">Container Fluid - É possível utilizar o atributo order para alterar a ordem das rows ***</p>
+        <p class="text-center">Container Fluid - É possível utilizar o atributo order para alterar a ordem das rows</p>
         <div class="container-fluid">
             <div class="row">
                 <div class="bg-1 my-auto col-4 order-1">
@@ -209,6 +211,17 @@
                 <div class="bg-1 col-sm-12 col-xl-4">
                 </div>
                 <div class="bg-1 col-sm-12 col-xl-4">
+                </div>
+            </div>
+        </div>
+
+        <p class="mt-5 text-center font-weight-bold">Offset</p>
+        <p class="text-center font-italic"><code>offstet-X</code></p>
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-4 bg-1">
+                </div>
+                <div class="col-4 offset-4 bg-1">
                 </div>
             </div>
         </div>
@@ -377,10 +390,10 @@
                 </div>
             </div>
 
-            <p class="mt-5 text-center">Adicionar a classe <code>table table-inverse</code> para inverter as cores da tabela.</p>
+            <p class="mt-5 text-center">Adicionar a classe <code>table table-dark</code> para inverter as cores da tabela.</p>
             <div class="row">
                 <div class="col">
-                    <table class="table table-inverse">
+                    <table class="table table-dark">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -413,11 +426,11 @@
                 </div>
             </div>
 
-            <p class="mt-5 text-center">Adicionar a classe <code>thead-inverse</code> para inverter apenas as cores do cabeçalho.</p>
+            <p class="mt-5 text-center">Adicionar a classe <code>thead-dark</code> para inverter apenas as cores do cabeçalho.</p>
             <div class="row">
                 <div class="col">
                     <table class="table">
-                        <thead class="thead-inverse">
+                        <thead class="thead-dark">
                             <tr>
                                 <th>#</th>
                                 <th>Primeiro Nome</th>
@@ -449,11 +462,11 @@
                 </div>
             </div>
 
-            <p class="mt-5 text-center">Adicionar a classe <code>thead-default</code> para deixar o cabeçalho em cor padrão.</p>
+            <p class="mt-5 text-center">Adicionar a classe <code>thead-light</code> para deixar o cabeçalho em cor padrão.</p>
             <div class="row">
                 <div class="col">
                     <table class="table">
-                        <thead class="thead-default">
+                        <thead class="thead-light">
                             <tr>
                                 <th>#</th>
                                 <th>Primeiro Nome</th>
@@ -523,7 +536,7 @@
 
             <div class="row">
                 <div class="col">
-                    <table class="table table-striped table-inverse">
+                    <table class="table table-striped table-dark">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -594,7 +607,7 @@
 
             <div class="row">
                 <div class="col">
-                    <table class="table table-bordered table-inverse">
+                    <table class="table table-bordered table-dark">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -665,7 +678,7 @@
 
             <div class="row">
                 <div class="col">
-                    <table class="table table-hover table-inverse">
+                    <table class="table table-hover table-dark">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -736,7 +749,7 @@
 
             <div class="row">
                 <div class="col">
-                    <table class="table table-hover table-inverse table-sm">
+                    <table class="table table-hover table-dark table-sm">
                         <thead>
                             <tr>
                                 <th>#</th>
@@ -2132,42 +2145,1975 @@
     <p class="h1 text-center font-weight-bold">Formulários</p>
     <p class="text-center"><code>form</code></p>
     <p class="text-center">O bootstrap solicita que a gente envolva o <code>label</code> e o <code>input</code> do formulário dentro de uma <code>div</code> com <code>class="form-group"</code></p>
+    <p class="text-center">Utilizar <code>form-control</code>para formatar o formulário corretamente dentro das colunas do bootstrap</p>
+    <p class="text-center">A tag <code>placeholder</code>é o que vai escrito dentro do formulário</p>
+    <p class="text-center text-italic">Foi utilizado <code>mx-auto</code>na <code>col</code>para centralizar</p>
+
+
 
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-6 mx-auto">
                 <form>
                     <div class="form-group">
                         <label for="inputEmail1">E-mail</label>
-                        <input type="email" name="inputEmail1" id="inputEmail1">
-                    </div>  
+                        <input type="email" class="form-control" name="inputEmail1" id="inputEmail1" placeholder="Insira seu e-mail" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">Ex:seuemail@seudominio.com.br</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSenha1">Senha</label>
+                        <input type="email" class="form-control" name="inputSenha1" id="inputSenha1" placeholder="Insira sua senha">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSenha1">Input com <code>readonly</code> para desativar</label>
+                        <input type="email" class="form-control" name="inputSenha1" id="inputSenha1" placeholder="Insira sua senha" readonly>
+                    </div> 
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Manter conectado
+                        </label>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6 mx-auto">
+                <label>O tamanho do input pode ser alterado com <code>form-control-lg/sm</code></label>
+                <input type="text" class="form-control form-control-lg">
+                <input type="text" class="form-control form-control-sm">
+                <input type="text" class="form-control form-control-lg">
+            </div>
+        </div>
+    </div>
+
+    <p class="mt-5 text-center">A tag <code>form-group row</code>para deixar em linha</p>
+    <p class="text-center">A tag <code>form-control-plaintext</code>"retira" o input</p>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <div class="form-group row">
+                        <label for="inputEmail2" class="col-sm-2 col-form-label">E-mail</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control-plaintext" name="inputEmail2" id="inputEmail2" placeholder="Insira seu e-mail" value="meuemail@meudominio.com.br" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputSenha2" class="col-sm-2 col-form-label">Senha</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" name="inputSenha2" id="inputSenha2" placeholder="Insira sua senha">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <p class="mx-auto"><code>form-row</code></p>
+            <div class="col-12">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nome" class="col-form-label">Nome:</label>
+                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu Nome">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="sobrenome" class="col-form-label">Sobrenome:</label>
+                            <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Digite seu Sobrenome">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="end" class="col-form-label">Endereço:</label>
+                            <input type="text" class="form-control" id="end" name="end" placeholder="Digite seu Endereço">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="cidade" class="col-form-label">Cidade:</label>
+                            <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Digite sua Cidade">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="estado" class="col-form-label">Estado:</label>
+                            <input type="text" class="form-control" id="estado" name="estado" placeholder="Digite seu Estado">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="cep" class="col-form-label">CEP:</label>
+                            <input type="text" class="form-control" id="cep" name="cep" placeholder="Digite seu CEP">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary float-right">Cadastrar</button>
                 </form>
             </div>
         </div>
     </div>
 
+    <p class="mt-5 text-center">Formulário linha</p>
+    <p class="mt-3 text-italic text-center"><code>form-inline</code></p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <form class="form-inline">
+                    <label class="sr-only" for="nameInline">Nome</label>
+                    <input tupe="text" id="nameInline" class="form-control mb-2 mr-2" placeholder="Digite seu nome">
+
+                    <label class="sr-only" for="senhaInline">Senha</label>
+                    <input tupe="text" id="senhaInline" class="form-control mb-2 mr-2" placeholder="Digite sua senha">
+                    <button class="btn btn-primary">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Input Group</p>
+    <p class="text-center"><code>input-group</code></p>
+    <p class="text-center">O elemento ao redor do "@" no exemplo abaixo é criado através da classe <code>input-group-addon</code></p>
+    <p class="text-center mb-3">Para alterar o tamanho do input-group, basta adicionar a classe<code>input-group-sm/lg</code></p>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4 mb-4">
+                <div class="input-group">
+                    <span class="input-group-addon id="input1">@</span>
+                    <input type="text" class="form-control" name="input1" placeholder="Nome de Usuário"
+                    aria-label="Nome de Usuário" aria-describedby="input1">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="input1" placeholder="Nome de Usuário"
+                    aria-label="Nome de Usuário" aria-describedby="input1">
+                    <span class="input-group-addon id="input1">@seudominio.com.br</span>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="input-group">
+                    <span class="input-group-addon id="input1">R$</span>
+                    <input type="text" class="form-control" name="input1" placeholder="Valor"
+                    aria-label="Nome de Usuário" aria-describedby="input1">
+                    <span class="input-group-addon id="input1">.00</span>
+                </div>
+            </div>
+            <div class="col-4 mb-4">
+                <div class="input-group">
+                    <span class="input-group-addon id="input1">R$</span>
+                    <span class="input-group-addon id="input1">.00</span>
+                    <input type="text" class="form-control" name="input1" placeholder="Valor"
+                    aria-label="Nome de Usuário" aria-describedby="input1">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon id="input1">R$</span>
+                    <input type="text" class="form-control" name="input1" placeholder="Valor"
+                    aria-label="Nome de Usuário" aria-describedby="input1">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="input-group input-group-sm">
+                    <span class="input-group-addon id="input1">R$</span>
+                    <input type="text" class="form-control" name="input1" placeholder="Valor"
+                    aria-label="Nome de Usuário" aria-describedby="input1">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="checkbox" aria-label="Checkbox acompanhando um input de texto">
+                    </span>
+                    <input type="text" class="form-control" aria-label="Input de texto acompanhando checkbox">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="radio" aria-label="Checkbox acompanhando um input de texto">
+                    </span>
+                    <input type="text" class="form-control" aria-label="Input de texto acompanhando checkbox">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="pesquisar por ...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary">Buscar</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Jumbotron / Hero</p>
+    <p class="text-center"><code>jumbotron</code></p>
+    <p class="text-center mb-3">Para utilizar a largura total do jumbotron, adicionar junto a classe <code>jumbotron</code>, a classe <code>jumbotron-fluid</code> + um <code>container</code></p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <h1 class="display-3">Olá, mundo!</h1>
+                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Voluptatem ipsa rerum dolorem praesentium nostrum quae eius, vero temporibus
+                        commodi repudiandae molestias voluptas atque iste fugiat.
+                        Aspernatur vero quibusdam cum molestiae?</p>
+                        <hr class="my-4">
+                        <p class="lead">
+                            <a href="#" class="btn btn-primary btn-lg">Saiba mais!</a>
+                        </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-3">Olá, mundo!</h1>
+                        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Voluptatem ipsa rerum dolorem praesentium nostrum quae eius, vero temporibus
+                            commodi repudiandae molestias voluptas atque iste fugiat.
+                            Aspernatur vero quibusdam cum molestiae?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-center mb-3"><code>jumbotron</code> em <code>container-fluid</code></p>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <h1 class="display-3">Olá, mundo!</h1>
+                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Voluptatem ipsa rerum dolorem praesentium nostrum quae eius, vero temporibus
+                        commodi repudiandae molestias voluptas atque iste fugiat.
+                        Aspernatur vero quibusdam cum molestiae?</p>
+                        <hr class="my-4">
+                        <p class="lead">
+                            <a href="#" class="btn btn-primary btn-lg">Saiba mais!</a>
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Paginador</p>
+    <p class="text-center">Para ter semântica e ajudar nas tecnologias assistidas, é necessário utilizar uma tag <code>nav</code>e um <code>aria-label="Paginador"</code> </p>
+    <p class="text-center"><code>pagination</code></p>
+    <p class="text-center"><code>page-item</code></p>
+    <p class="text-center"><code>page-link</code></p>
+    <p class="text-center mb-3">É possível utilizar as classes <code>active/disabled</code>junto com <code>page-item</code>para ativar/desativar o link</p>
+    <p class="text-center mb-3">É possível utilizar as classes <code>pagination-lg/sm</code>junto com <code>pagination</code>para alterar o tamanho do paginador</p>
+
+    <p class="text-center mb-3">Para centralizar, foi utilizado a classe<code>justify-content-center</code>junto a classe <code>pagination</code></p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="Paginador">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a href="#" class="page-link">Anterior</a></li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Próximo</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="Paginador">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a href="#" class="page-link">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Anterior</span> <!--Para tecnologias assistidas-->
+                            </a>
+                        </li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Próximo</span> <!--Para tecnologias assistidas-->
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="Paginador">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><a href="#" class="page-link">Anterior</a></li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item active"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Próximo</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="Paginador">
+                    <ul class="pagination pagination-lg justify-content-center">
+                        <li class="page-item"><a href="#" class="page-link">Anterior</a></li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Próximo</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="Paginador">
+                    <ul class="pagination pagination-sm justify-content-center">
+                        <li class="page-item"><a href="#" class="page-link">Anterior</a></li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Próximo</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="Paginador">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item"><a href="#" class="page-link">Anterior</a></li>
+                        <li class="page-item"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">Próximo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Popover</p>
+    <p class="text-center"><code>popover</code></p>
+    <p class="text-center">Para utilizar o popover, é necessário ter o script <code><script src="./js/popper.min.js"></script>adicionado ao arquivo</code></p>
+    <p class="text-center">E uma função própria</p>
+    <p class="text-center">Para definir em qual lado do button o popover será ativo, é necessesário utilizar o atributo <code>data-placement="top/right/bottom/left"</code>d</p>
+
+
+
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-12">
+                <button type="button" class="btn btn-lg btn-danger" data-toggle="popover"
+                title="Título do popover" data-content="Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptatem ipsa rerum dolorem praesentium nostrum quae eius, vero temporibus
+                commodi repudiandae molestias voluptas atque iste fugiat.
+                Aspernatur vero quibusdam cum molestiae?">Clique para abrir o popover!</button>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12">
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                data-placement="top" data-content="Lorem ipsum dolor sit.">
+                Popover - Top</button>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12">
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                data-placement="right" data-content="Lorem ipsum dolor sit.">
+                Popover - Direita</button>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12">
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                data-placement="bottom" data-content="Lorem ipsum dolor sit.">
+                Popover - Baixo</button>
+            </div>
+        </div>
+        <div class="row float-right mb-5">
+            <div class="col-12">
+                <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover"
+                data-placement="left" data-content="Lorem ipsum dolor sit.">
+                Popover - Esquerda</button>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold mt-5">Listagem em Grupo</p>
+    <p class="text-center"><code>list-group</code></p>
+    <p class="text-center"><code>list-group-item</code></p>
+    <p class="text-center"><code>list-group-item-action</code></p>
+    <p class="text-center">Para deixar o item em estado ativado/desativado, utilizar as classes <code>active/disabled</code></p>
+    <p class="text-center">Para deixar o item como link, mas formatado como lista, utilizar a classe <code>list-group-item-action</code></p>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4">
+                <ul class="list-group">
+                    <li class="list-group-item">Item #1</li>
+                    <li class="list-group-item active">Item #2</li>
+                    <li class="list-group-item disabled">Item #3</li>
+                    <li class="list-group-item">Item #4</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">Link #1</a>
+                    <a href="#" class="list-group-item list-group-item-action">Link #2</a>
+                    <a href="#" class="list-group-item list-group-item-action">Link #3</a>
+                    <a href="#" class="list-group-item list-group-item-action disabled">Link #4</a>
+                    <a href="#" class="list-group-item list-group-item-action">Link #5</a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action active">Button #1</button>
+                    <button type="button" class="list-group-item list-group-item-action">Button #2</button>
+                    <button type="button" class="list-group-item list-group-item-action">Button #3</button>
+                    <button type="button" class="list-group-item list-group-item-action" disabled>Button #4</button>
+                    <button type="button" class="list-group-item list-group-item-action">Button #5</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-center mt-5">É possível alterar as cores utilizando a classe <code>list-group-item-primary/secondary/success/danger/warning/info/light/dark</code></p>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-4">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary">Item #1</li>
+                    <li class="list-group-item list-group-item-secondary">Item #2</li>
+                    <li class="list-group-item list-group-item-success">Item #3</li>
+                    <li class="list-group-item list-group-item-danger">Item #4</li>
+                    <li class="list-group-item list-group-item-warning">Item #5</li>
+                    <li class="list-group-item list-group-item-info">Item #6</li>
+                    <li class="list-group-item list-group-item-light">Item #7</li>
+                    <li class="list-group-item list-group-item-dark">Item #8</li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Link #1</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Link #2</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success">Link #3</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Link #4</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Link #5</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">Link #6</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">Link #7</a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Link #8</a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-primary">Button #1</button>
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-secondary">Button #2</button>
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-success">Button #3</button>
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-danger">Button #4</button>
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-warning">Button #5</button>
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-info">Button #6</button>
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-light">Button #7</button>
+                    <button type="button" class="list-group-item list-group-item-action list-group-item-dark">Button #8</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="h2 text-center font-weight-bold mt-5">Listas Personalizadas</p>
+    <p class="text-center">Para deixar o item da lista em estado ativado/desativado, utilizar as classes <code>active/disabled</code></p>
+    <p class="text-center mb-5"><code>tab-content</code></p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5>Título da lista</h5>
+                            <small>03 dias atrás</small>
+                        </div>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque temporibus dolorum soluta illo eum sit perferendis, culpa eos dolores!
+                            Repellat ad sint beatae reiciendis rem vero id, eveniet tempora numquam.</p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5>Título da lista</h5>
+                            <small>03 dias atrás</small>
+                        </div>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque temporibus dolorum soluta illo eum sit perferendis, culpa eos dolores!
+                            Repellat ad sint beatae reiciendis rem vero id, eveniet tempora numquam.</p>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5>Título da lista</h5>
+                            <small>03 dias atrás</small>
+                        </div>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Atque temporibus dolorum soluta illo eum sit perferendis, culpa eos dolores!
+                            Repellat ad sint beatae reiciendis rem vero id, eveniet tempora numquam.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-3">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a href="#list-home" class="list-group-item list-group-item-action active" id="list-home-list"
+                    data-toggle="list" role="tab" aria-control="home">HOME</a>
+                    <a href="#list-perfil" class="list-group-item list-group-item-action" id="list-perfil-list"
+                    data-toggle="list" role="tab" aria-control="perfil">PERFIL</a>
+                    <a href="#list-status" class="list-group-item list-group-item-action" id="list-status-list"
+                    data-toggle="list" role="tab" aria-control="status">STATUS</a>
+                    <a href="#list-contato" class="list-group-item list-group-item-action" id="list-contato-list"
+                    data-toggle="list" role="tab" aria-control="contato">CONTATO</a>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="tab-content" id="nav-tabContent">
+                    <div id="list-home" class="tab-pane fade show active" role="tabpanel" aria-labelledby="list-home-list">
+                        <h3>Home</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Hic, illo. Perspiciatis suscipit labore temporibus quaerat repudiandae id debitis vero,
+                        dolor perferendis eos nulla. Blanditiis rem unde reiciendis iure veritatis. Natus.</p>
+                    </div>
+                    <div id="list-perfil" class="tab-pane fade" role="tabpanel" aria-labelledby="list-perfil-list">
+                        <h3>Perfil</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Hic, illo. Perspiciatis suscipit labore temporibus quaerat repudiandae id debitis vero,
+                        dolor perferendis eos nulla. Blanditiis rem unde reiciendis iure veritatis. Natus.</p>
+                    </div>
+                    <div id="list-status" class="tab-pane fade" role="tabpanel" aria-labelledby="list-status-list">
+                        <h3>Status</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Hic, illo. Perspiciatis suscipit labore temporibus quaerat repudiandae id debitis vero,
+                        dolor perferendis eos nulla. Blanditiis rem unde reiciendis iure veritatis. Natus.</p>
+                    </div>
+                    <div id="list-contato" class="tab-pane fade" role="tabpanel" aria-labelledby="list-contato-list">
+                        <h3>Contato</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" name="nome" id="nome" placeholder="Digite seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" class="form-control" name="assunto" id="assunto" placeholder="Digite o assunto">
+                            </div>
+                            <div class="form-group">
+                                <label for="conteudo">Conteúdo</label>
+                                <input type="text" class="form-control" name="conteudo" id="conteudo" placeholder="Digite o conteúdo">
+                            </div>
+                            <button class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Modal</p>
+    <p class="text-center"><code>modal</code></p>
+    <p class="text-center"><code>modal-dialog</code></p>
+    <p class="text-center"><code>modal-content</code></p>
+    <p class="text-center"><code>modal-header</code></p>
+    <p class="text-center"><code></code>modal-title</code></p>
+
+    <p class="text-center">Para fechar o modal é necessário criar um <code>button</code>dentro do header</p>
+    <p class="text-center"><code>modal-body</code></p>
+    <p class="text-center"><code>modal-footer</code></p>
+    <p class="text-center">Pode ser definido como sempre aparecendo ou com um disparador</p>
+    <p class="text-center">Para aparecer diretamente, é necessário adicionar um <code>script</code></p>
+    <p class="text-center">Para fechar o modal, tanto no botão cancelar quanto no ícone de fechamento, é necessário adicionar o atributo <code>data-dismiss</code></p>
 
 
 
 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="modal">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Título do Modal</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Corpo do Modal!</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Salvar Alterações</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        
-        
+    <p class="mt-3 text-center font-weight-bold">Modal com disparador</p>
+    <p class="mt-3 text-center">Para centralizar o botão, é necessário adicionar a classe<code>text-center</code>junto a <code>row</code></p>
+    <p class="mt-3 text-center">Ao adicionarmos a classe <code>fade</code>junto ao <code>modal</code>temos uma entrada mais suavizada</p>
+    <p class="mt-3 text-center mb-3">Para alterar o tamanho do modal entre lg/sm, basta adicionar a classe<code>modal-lg/sm</code>após<code>modal-dialog</code></p>
+
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modalExemplo1">
+                    Disparador do Modal
+                </button>
+                <div id="modalExemplo1" class="modal fade">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Título do Modal</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minima itaque, quam temporibus voluptatibus animi. Fugiat nobis nesciunt quo reiciendis labore, quibusdam nisi voluptas iure officiis, ad, nihil deleniti porro?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Salvar Alterações</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center mt-3">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modalExemplo2">
+                    Disparador do Modal LG
+                </button>
+                <div id="modalExemplo2" class="modal fade">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Título do Modal</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minima itaque, quam temporibus voluptatibus animi. Fugiat nobis nesciunt quo reiciendis labore, quibusdam nisi voluptas iure officiis, ad, nihil deleniti porro?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Salvar Alterações</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center mt-3">
+            <div class="col-12">
+                <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#modalExemplo3">
+                    Disparador do Modal SM
+                </button>
+                <div id="modalExemplo3" class="modal fade">
+                    <div class="modal-dialog modal-sm" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Título do Modal</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minima itaque, quam temporibus voluptatibus animi. Fugiat nobis nesciunt quo reiciendis labore, quibusdam nisi voluptas iure officiis, ad, nihil deleniti porro?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary">Salvar Alterações</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Navegação</p>
+    <p class="text-center"><code>nav</code></p>
+    <p class="text-center"><code>nav-item</code></p>
+    <p class="text-center"><code>nav-link</code></p>
+
+
+    <p class="text-center">Para trabalhar a navbar, podemos utilizar uma tag<code>nav</code>, para a navegação primária ou uma lista não ordenada, para navegações secundárias</p>
+    <p class="text-center">Por ser um componente de navegação, é necessário uma tag <code>a</code></p>
+    <p class="text-center">É possível ativar e desativar os links utilizando as classes <code>active/disabled</code></p>
+    <p class="text-center">Para alterar o alinhamento, basta adicionar a tag<code>justify-content-#</code>junto a classe<code>nav</code></p>
+
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Link #1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link #2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Link #3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Link #4</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <nav class="nav justify-content-end">
+                    <a href="#" class="nav-link active">Link #1</a>
+                    <a href="#" class="nav-link">Link #2</a>
+                    <a href="#" class="nav-link disabled">Link #3</a>
+                    <a href="#" class="nav-link">Link #4</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <p class="mt-3 text-center">Também é possível alterar a navegação para vertical, utilizando a classe <code>flex-column</code>após a classe <code>nav</code></p>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="nav flex-column">
+                    <a href="#" class="nav-link">Link 1</a>
+                    <a href="#" class="nav-link">Link 2</a>
+                    <a href="#" class="nav-link">Link 3</a>
+                    <a href="#" class="nav-link">Link 4</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <p class="mt-3 text-center">Para deixar a navegação em modo abas, basta adicionar a classe <code>nav-tabs</code>após a classe <code>nav</code></p>
+    
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <nav class="nav nav-tabs">
+                    <a href="#" class="nav-link active">Link 1</a>
+                    <a href="#" class="nav-link">Link 2</a>
+                    <a href="#" class="nav-link">Link 3</a>
+                    <a href="#" class="nav-link">Link 4</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <p class="mt-3 text-center">Para deixar a navegação em modo pills, basta adicionar a classe <code>nav-pills</code>após a classe <code>nav</code></p>
+    
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <nav class="nav nav-pills">
+                    <a href="#" class="nav-link active">Link 1</a>
+                    <a href="#" class="nav-link">Link 2</a>
+                    <a href="#" class="nav-link">Link 3</a>
+                    <a href="#" class="nav-link">Link 4</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Barras de Navegação</p>
+    <p class="text-center"><code>navbar</code></p>
+    <p class="text-center"><code>navbar-light/dark</code></p>
+    <p class="text-center"><code>bg-light/dark</code></p>
+    <p class="text-center"><code>navbar-brand</code></p>
+    <p class="text-center">As classes devem ser adicionadas em uma tag <code>nav</code></p>
+
+    <p class="text-center">Para mostrar o icone de menu hamburguer em viewports menores, utilizar as classes abaixo</p>
+    <p class="text-center"><code>navbar-toggler</code></p>
+    <p class="text-center"><code>navbar-toggler-icon</code></p>
+
+    <p class="text-center">Para adicionar os itens no menu hamburguer, utilizar as classes</p>
+    <p class="text-center"><code>collapse</code></p>
+    <p class="text-center"><code>navbar-collapse</code></p>
+    <p class="text-center"><code>navbar-nav</code></p>
+    <p class="text-center"><code>nav-item</code></p>
+    <p class="text-center"><code>nav-link</code></p>
+
+    <p class="text-center">Para o menu hamburguer aparecer apenas em viewports pequenas, adicione a classe <code>navbar-expand-lg</code>para que em viewports lg ele saia do item colapso</p>
+    <p class="text-center">Como o logo e o texto estão ocupando um espaço grande, utilizei a classe <code>ml-auto</code> na <code>ul navbar-nav</code> para posicionar os links a direita</p>
+    <p class="text-center">Para adicionar um dropdown, basta adicionar a classe <code>dropdown</code>junto ao <code>nav-item</code>. Seguido de<code>dropdown-toggle</code>junto ao <code>nav-link</code></p>
+    <p class="text-center">Também é possível adicionar um formulário dentro da navbar</p>
 
 
 
 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-light bg-light navbar-expand-lg">
+                    <a href="#" class="navbar-brand">
+                        <img src="./img/logo-ideabox.svg" class="d-inline-block align-top">
+                        cursoBootstrap
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav1"
+                    aria-controls="nav1" aria-expanded="false" aria-label="Navegação Toggle">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="nav1">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Cases</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="linkDrop" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="linkDrop">
+                                    <a href="#" class="dropdown-item">Link 1</a>
+                                    <a href="#" class="dropdown-item">Link 2</a>
+                                    <a href="#" class="dropdown-item">Link 3</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contato</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <input type="text" class="form-control mr-sm-2" placeholder="Pesquisar..."
+                            aria-label="Pesquisar"></input>
+                            <button type="submit" class="btn btn-outline-primary my-2 my-sm-0">Buscar</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <p class="mt-3 text-center">Exemplo sem img para demonstrar a classe<code>justify-content-between</code>que alinha o formulário a direita, separado dos links</p>
 
 
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-light bg-light navbar-expand-lg">
+                    <a href="#" class="navbar-brand">
+                        navBar
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav1"
+                    aria-controls="nav1" aria-expanded="false" aria-label="Navegação Toggle">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="nav1">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Cases</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="linkDrop" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="linkDrop">
+                                    <a href="#" class="dropdown-item">Link 1</a>
+                                    <a href="#" class="dropdown-item">Link 2</a>
+                                    <a href="#" class="dropdown-item">Link 3</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contato</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <input type="text" class="form-control mr-sm-2" placeholder="Pesquisar..."
+                            aria-label="Pesquisar"></input>
+                            <button type="submit" class="btn btn-outline-primary my-2 my-sm-0">Buscar</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <p class="mt-3 text-center">Alterar as cores da navbar com as classes <code>navbar-light/dark/etc</code>e <code>bg-light/dark/primary/etc</code></p>
+    <p class="text-center">Para utilizar uma cor própria, é necessário alterar no CSS</p>
+    <p class="text-center">Para fixar a navbar enquanto se faz a rolagem, é necessário utilizar a classe<code>fixed-top/bottom</code></p>
+    <p class="text-center font-italic">*Não esquecer de ajustar a margem do<code>body</code>para que a navbar não fique sobre o conteúdo</p>
 
 
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+                    <a href="#" class="navbar-brand">
+                        navBar
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav1"
+                    aria-controls="nav1" aria-expanded="false" aria-label="Navegação Toggle">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="nav1">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Cases</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="linkDrop" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="linkDrop">
+                                    <a href="#" class="dropdown-item">Link 1</a>
+                                    <a href="#" class="dropdown-item">Link 2</a>
+                                    <a href="#" class="dropdown-item">Link 3</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contato</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <input type="text" class="form-control mr-sm-2" placeholder="Pesquisar..."
+                            aria-label="Pesquisar"></input>
+                            <button type="submit" class="btn btn-outline-primary my-2 my-sm-0">Buscar</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
+                    <a href="#" class="navbar-brand">
+                        navBar
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav1"
+                    aria-controls="nav1" aria-expanded="false" aria-label="Navegação Toggle">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="nav1">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Cases</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="linkDrop" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="linkDrop">
+                                    <a href="#" class="dropdown-item">Link 1</a>
+                                    <a href="#" class="dropdown-item">Link 2</a>
+                                    <a href="#" class="dropdown-item">Link 3</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Contato</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <input type="text" class="form-control mr-sm-2" placeholder="Pesquisar..."
+                            aria-label="Pesquisar"></input>
+                            <button type="submit" class="btn btn-outline-ligth my-2 my-sm-0">Buscar</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Barra de Progresso</p>
+    <p class="text-center"><code>progress</code></p>
+    <p class="text-center"><code>progress-bar</code></p>
+    <p class="text-center">Não esquecer de adicionar as tags <code>role</code>e<code>aria</code>para usuários de tecnologias assistidas</p>
+    <p class="text-center">Para marcar o progresso, utilizar a classe utilitária<code>w-X</code>, onde X é a porcentagem do progresso</p>
+    <p class="text-center">Para alterar as cores, basta utilizar as classes utiliárias de background</p>
 
 
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="progress mb-2">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="progress mb-2">
+                    <div class="progress-bar w-25 bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">
+                    25%
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="progress mb-2">
+                    <div class="progress-bar w-50 bg-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100">
+                    50%
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="progress mb-2">
+                    <div class="progress-bar w-75 bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                    aria-valuemax="100">
+                    75%
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="progress mb-2">
+                    <div class="progress-bar w-100  bg-warning" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100">
+                    100%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-center mt-3 mb-3">É possível utilizar mais de uma barra de progresso em um único recipiente</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="progress mb-2">
+                    <div class="progress-bar w-25  bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100">
+                    25%
+                    </div>
+                    <div class="progress-bar w-50  bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100">
+                    50%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-center mt-3 mb-3">Também é possível deixar a barra de progresso listrada, utilizando a classe<code>progress-bar-striped</code></p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="progress mb-2">
+                    <div class="progress-bar w-75 bg-success progress-bar-striped" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100">
+                    75%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-center mt-3 mb-3">Também podemos animar nossa barra de progresso com a classe<code>progress-bar-animated</code></p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="progress mb-2">
+                    <div class="progress-bar w-75 bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100">
+                    75%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Tooltips</p>
+    <p class="text-center"><code>#</code></p>
+    <p class="text-center">Tooltip é a legenda que aparece acima do elemento quando em hover</p>
+    <p class="text-center">Para habilitá-lo, é necessário criar seu <code>script</code></p>
+    <p class="text-center">O <code>data-placement="top/right/bottom/left</code>é o atributo que define onde ele irá aparecer</p>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                data-placement="top" title="Tooltip no Topo">
+                    Tooltip Top
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                data-placement="right" title="Tooltip na Direita">
+                    Tooltip Right
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                data-placement="bottom" title="Tooltip Abaixo">
+                    Tooltip Bottom
+                </button>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip"
+                data-placement="left" title="Tooltip Left">
+                    Tooltip Left
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Bordas</p>
+    <p class="text-center"><code>border</code></p>
+    <p class="text-center">Para retirar algum lado da borda, utilizar a classe<code>border-top/right/bottom/left-0</code></p>
+    <p class="text-center">Para alterar as cores da borda, utilizar a classe<code>border-primary/secondary/success/etc</code></p>
+
+
+    <div class="bordas">
+
+        <div class="container">
+            <div class="row row-borda">
+                <div class="col-2 mt-3 col-borda border">
+
+                </div>
+                <div class="col-2 mt-3 col-borda border border-0">
+
+                </div>
+                <div class="col-2 mt-3 col-borda border border-top-0">
+
+                </div>
+            </div>
+            <div class="row row-borda">
+                <div class="col-2 mb-3 col-borda border border-right-0">
+
+                </div>
+                <div class="col-2 mb-3 col-borda border border-bottom-0">
+
+                </div>
+                <div class="col-2 mb-3 col-borda border border-left-0">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row row-borda">
+                <div class="col-2 mt-3 col-borda border border-primary">
+
+                </div>
+                <div class="col-2 mt-3 col-borda border border-secondary">
+
+                </div>
+                <div class="col-2 mt-3 col-borda border border-success">
+
+                </div>
+            </div>
+            <div class="row row-borda">
+                <div class="col-2 col-borda border border-danger">
+
+                </div>
+                <div class="col-2 col-borda border border-warning">
+
+                </div>
+                <div class="col-2 col-borda border border-info">
+
+                </div>
+            </div>
+            <div class="row row-borda">
+                <div class="col-2 mb-3 col-borda border border-light">
+
+                </div>
+                <div class="col-2 mb-3 col-borda border border-dark">
+
+                </div>
+                <div class="col-2 mb-3 col-borda border border-white">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="text-center text-white">Para arredondar os cantos, utilizar a classe<code>rounded</code> para arredondar todos, ou <code>rounded-top/right/bottom/left</code>para aplicar em apenas 1 dos lados</p>
+            <p class="text-center text-white">Para transformar o elemento em círculo, utilziar a classe<code>rounded-circle</code></p>
+            <div class="row row-borda">
+                <div class="col-2 mt-3 col-borda border border-primary rounded">
+
+                </div>
+                <div class="col-2 mt-3 col-borda border border-secondary rounded-top">
+
+                </div>
+                <div class="col-2 mt-3 col-borda border border-success rounded-right">
+
+                </div>
+            </div>
+            <div class="row row-borda">
+                <div class="col-2 col-borda border border-danger rounded-bottom">
+
+                </div>
+                <div class="col-2 col-borda border border-warning rounded-left">
+
+                </div>
+                <div class="col-2 col-borda border border-info rounded-circle">
+
+                </div>
+            </div>
+            <div class="row row-borda">
+                <div class="col-2 mb-3 col-borda border border-light">
+
+                </div>
+                <div class="col-2 mb-3 col-borda border border-dark">
+
+                </div>
+                <div class="col-2 mb-3 col-borda border border-white">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Clearfix</p>
+    <p class="text-center"><code>.clearfix</code></p>
+    <p class="text-center">Você pode adicionar a classe <code>.clearfix</code> no elemento pai de um objeto para poder realizar sua flutuação.</p>
+    <p class="text-center">O exemplo a seguir mostra como o <b>clearfix</b> pode ser usado. Sem o <b>clearfix</b>, a div  não abrangeria os botões, o que causaria um layout quebrado.</p>
+
+    <br>
+
+    <div class="bg-info clearfix">
+        <button class="btn btn-secondary float-left">Exemplo de Botão flutuando para esquerda</button>
+        <button class="btn btn-secondary float-right">Exemplo de Botão flutuando para direita</button>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Botão de fechamento</p>
+    <p class="text-center"><code>close</code></p>
+    <p class="text-center">Você pode usar um ícone genérico de fechamento para descartar conteúdo, como modais e alertas.</p>
+    <p class="text-center">Lembre-se <b>de incluir a informação textual para leitores de tela</b> , como fizemos no <code>aria-label</code>.</p>
+    
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <button type="button" class="close" aria-label="Fechar">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Cores</p>
+    <p class="text-center"><code>text-primary/secondary/success/etc</code></p>
+    
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="text-center text-primary">Texto para exibição de cores - Primary</p>
+                <p class="text-center text-secondary">Texto para exibição de cores - Secondary</p>
+                <p class="text-center text-success">Texto para exibição de cores - Success</p>
+                <p class="text-center text-danger">Texto para exibição de cores - Danger</p>
+                <p class="text-center text-warning">Texto para exibição de cores - Warning</p>
+                <p class="text-center text-info">Texto para exibição de cores - Info</p>
+                <p class="text-center text-light">Texto para exibição de cores - Light</p>
+                <p class="text-center text-dark">Texto para exibição de cores - Dark</p>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <p class="text-center font-weight-bold">Cores em links.</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="text-center"><a href="#" class="text-primary">Texto para exibição de cores - Primary</a></p>
+                <p class="text-center"><a href="#" class="text-secondary">Texto para exibição de cores - Secondary</a></p>
+                <p class="text-center"><a href="#" class="text-success">Texto para exibição de cores - Success</a></p>
+                <p class="text-center"><a href="#" class="text-danger">Texto para exibição de cores - Danger</a></p>
+                <p class="text-center"><a href="#" class="text-warning">Texto para exibição de cores - Warning</a></p>
+                <p class="text-center"><a href="#" class="text-info">Texto para exibição de cores - Info</a></p>
+                <p class="text-center"><a href="#" class="text-light">Texto para exibição de cores - Light</a></p>
+                <p class="text-center"><a href="#" class="text-dark">Texto para exibição de cores - Dark</a></p>
+            </div>
+        </div>
+    </div>
+
+    <p class="mt-3 text-center font-weight-bold">Cores no background</p>
+    <p class="mb-3 text-center"><code>bg-primary/secondary/etc</code>></p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="p-3 mb-2 bg-primary"></div>
+                <div class="p-3 mb-2 bg-secondary"></div>
+                <div class="p-3 mb-2 bg-success"></div>
+                <div class="p-3 mb-2 bg-danger"></div>
+                <div class="p-3 mb-2 bg-warning"></div>
+                <div class="p-3 mb-2 bg-info"></div>
+                <div class="p-3 mb-2 bg-light"></div>
+                <div class="p-3 mb-2 bg-dark"></div>
+                <div class="p-3 mb-2 bg-white"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Propriedades do Display</p>
+    <p class="text-center text-danger">REVISAR AS PROPRIEDADES DISPLAY CSS</p>
+    <p class="text-center">O Bootstrap inclui suporte para alguns dos valores mais comuns de displays, bem como alguns extras para controlar a exibição durante a impressão.</p>
+    <p class="text-center">Você pode usar as classes abaixo para modificar o display:</p>
+    
+    <br>
+
+    <p class="text-center"><code>.d-none</code></p>
+    <p class="text-center"><code>.d-inline</code></p>
+    <p class="text-center"><code>.d-inline-block</code></p>
+    <p class="text-center"><code>.d-block</code></p>
+    <p class="text-center"><code>.d-table</code></p>
+    <p class="text-center"><code>.d-table-cell</code></p>
+    <p class="text-center"><code>.d-flex</code></p>
+    <p class="text-center"><code>.d-inline-flex</code></p>
+
+    <p class="text-center">Adicione-as para um elemento para modificar sua visualização. Por exemplo, veja como você pode usar os utilitários inline, block ou inline-block</p>
+
+    <div class="d-inline bg-success">d-inline</div>
+    <div class="d-inline bg-success">d-inline</div>
+
+    <span class="d-block bg-primary">d-block</span>
+
+    <div class="d-inline-block bg-warning">d-inline-block</div>
+    <div class="d-inline-block bg-warning">d-inline-block</div>
+
+    <p class="text-center">Você pode também modificar o display de um elemento para cada viewport utilizando as classes auxiliares abaixo:</p>
+
+    <p class="text-center"><code>.d-none</code></p>
+    <p class="text-center"><code></code>.d-none</code></p>
+
+    <br>
+
+    <p class="text-center"><code>.d-inline</code></p>
+    <p class="text-center"><code>.d-inline-block</code></p>
+    <p class="text-center"><code>.d-block</code></p>
+    <p class="text-center"><code>.d-table</code></p>
+    <p class="text-center"><code>.d-table-cell</code></p>
+    <p class="text-center"><code>.d-flex</code></p>
+    <p class="text-center"><code>.d-inline-flex</code></p>
+
+    <br>
+
+    <p class="text-center"><code>.d-sm-none</code></p>
+    <p class="text-center"><code>.d-sm-inline</code></p>
+    <p class="text-center"><code>.d-sm-inline-block</code></p>
+    <p class="text-center"><code>.d-sm-block</code></p>
+    <p class="text-center"><code>.d-sm-table</code></p>
+    <p class="text-center"><code>.d-sm-table-cell</code></p>
+    <p class="text-center"><code>.d-sm-flex</code></p>
+    <p class="text-center"><code>.d-sm-inline-flex</code></p>
+
+    <br>
+
+    <p class="text-center"><code>.d-md-none</code></p>
+    <p class="text-center"><code>.d-md-inline</code></p>
+    <p class="text-center"><code>.d-md-inline-block</code></p>
+    <p class="text-center"><code>.d-md-block</code></p>
+    <p class="text-center"><code>.d-md-table</code></p>
+    <p class="text-center"><code>.d-md-table-cell</code></p>
+    <p class="text-center"><code>.d-md-flex</code></p>
+    <p class="text-center"><code>.d-md-inline-flex</code></p>
+
+    <br>
+
+    <p class="text-center"><code>.d-lg-none</code></p>
+    <p class="text-center"><code>.d-lg-inline</code></p>
+    <p class="text-center"><code>.d-lg-inline-block</code></p>
+    <p class="text-center"><code>.d-lg-block</code></p>
+    <p class="text-center"><code>.d-lg-table</code></p>
+    <p class="text-center"><code>.d-lg-table-cell</code></p>
+    <p class="text-center"><code>.d-lg-flex</code></p>
+    <p class="text-center"><code>.d-lg-inline-flex</code></p>
+
+    <br>
+
+    <p class="text-center"><code>.d-xl-none</code></p>
+    <p class="text-center"><code>.d-xl-inline</code></p>
+    <p class="text-center"><code>.d-xl-inline-block</code></p>
+    <p class="text-center"><code>.d-xl-block</code></p>
+    <p class="text-center"><code>.d-xl-table</code></p>
+    <p class="text-center"><code>.d-xl-table-cell</code></p>
+    <p class="text-center"><code>.d-xl-flex</code></p>
+    <p class="text-center"><code>.d-xl-inline-flex</code></p>
+
+    <br>
+
+    <p class="text-center font-weight-bold">Display na impressão</p>
+    <p class="text-center">Você pode alterar o valor do <code>display</code> nos elementos ao imprimir com os utilitários de exibição de impressão.</p>
+    
+    <p class="text-center"><code>.d-print-block</code></p>
+    <p class="text-center"><code>.d-print-inline</code></p>
+    <p class="text-center"><code>.d-print-inline-block</code></p>
+    <p class="text-center"><code>.d-print-none</code></p>
+
+    <br>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Incorporação de conteúdo</p>
+    <p class="text-center"><code>embed-responsive</code></p>
+    <p class="text-center"><code>embed-responsive-16by9/21by9/4by3/1by1</code></p>
+    <p class="text-center"><code>embed-responsive-item</code></p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0psMvzNn1dY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Float</p>
+    <p class="text-center"><code>#</code></p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center">Você pode flutuar um elemento em qualquer breakpoint com uso dos utilitários responsivos. Essas classes de utilitário flutuam um elemento para a esquerda ou para a direita, ou desativam a flutuação, com base no tamanho do viewport atual. Eles usam os mesmos pontos de interrupção do viewport como no sistema de grid.</p>
+                <div class="float-left">Float left on all viewport sizes</div><br>
+                <div class="float-right">Float right on all viewport sizes</div><br>
+                <div class="float-none">Don't float on all viewport sizes</div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <p class="text-center font-weight-bold">Responsivo</p>
+    <p class="text-center">Variações responsivas também existem para cada valor do <code>float</code>.</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="float-sm-left">Float left on viewports sized SM (small) or wider</div><br>
+                <div class="float-md-left">Float left on viewports sized MD (medium) or wider</div><br>
+                <div class="float-lg-left">Float left on viewports sized LG (large) or wider</div><br>
+                <div class="float-xl-left">Float left on viewports sized XL (extra-large) or wider</div><br>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <p class="text-center">Aqui estão todas as classes de suporte para o float:</p>
+
+    <br>
+
+    <p class="text-center"><code>.float-left</code></p>
+    <p class="text-center"><code>.float-right</code></p>
+    <p class="text-center"><code>.float-none</code></p>
+
+    <br>
+
+    <p class="text-center"><code>.float-sm-left</code></p>
+    <p class="text-center"><code>.float-sm-right</code></p>
+    <p class="text-center"><code>.float-sm-none</code></p>
+ 
+    <br>
+
+    <p class="text-center"><code>.float-md-left</code></p>
+    <p class="text-center"><code>.float-md-right</code></p>
+    <p class="text-center"><code>.float-md-none</code></p>
+
+    <br>
+
+    <p class="text-center"><code>.float-lg-left</code></p>
+    <p class="text-center"><code>.float-lg-right</code></p>
+    <p class="text-center"><code>.float-lg-none</code></p>
+
+    <br>
+
+    <p class="text-center"><code>.float-xl-left</code></p>
+    <p class="text-center"><code>.float-xl-right</code></p>
+    <p class="text-center"><code>.float-xl-none</code></p>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Posição</p>
+    <p class="text-center">Você pode usar este utilitário para configurar rapidamente a posição de um elemento.</p>
+
+    <p class="mt-3 text-center font-weight-bold">Topo fixo</p>
+
+    <p class="text-center">Posicione um elemento no topo da viewport, de uma borda a outra. Pode ser seja necessário adicionar CSS adicionais para manipular os conteúdos da página.</p>
+    <p class="text-center font-italic">*Neste caso o exemplo não está ativo pois o elemento ficaria fixo no topo mesmo quando scrollado para baixo.*</p>
+    <code><div class="fixed-top"></div></code>
+
+    <br>
+
+    <p class="mt-3 text-center font-weight-bold">Rodapé fixo</p>
+
+    <br>
+
+    <p class="text-center">Posicione um elemento na parte inferior da viewport, de uma borda a outra.  Pode ser seja necessário adicionar CSS adicionais para manipular os conteúdos da página.</p>
+    <p class="text-center font-italic">*Neste caso o exemplo não está ativo pois o elemento ficaria fixo no rodapé quando scrollado*</p>
+    <code><div class="fixed-bottom">...</div></code>
+
+    <br>
+
+    <p class="mt-3 text-center font-weight-bold">Topo Sticky</p>
+
+    <br>
+
+    <p class="text-center">Posicione um elemento na parte superior da viewport, de uma borda a outra, mas somente depois de percorrê-lo. O <code>.sticky-top</code> utilitário usa CSS <code>position: sticky</code>, que não é totalmente suportado em todos os navegadores.</p>
+    <br>
+    <p class="text-center"><b>Microsoft Edge e IE11 renderizarão</b> <code>position: sticky</code> <b>como</b> <code></code>position: relative</code>. Como tal, o Bootstrap envolve os estilos em uma consulta <code>@supports</code>, limitando a aderência a apenas navegadores que podem ser adequadamente processados.</p>
+    <code><div class="sticky-top">...</div></code>
+
+    <hr>
+    
+    <p class="h1 text-center font-weight-bold">Screenreaders</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center">O Bootstrap nos permite adicionar elementos que só serão visíveis em tecnologias assistidas, como os leitores de tela.</p>
+                <p class="text-center">Para ocultar um elemento para todos os dispositivos, <b>exceto os leitores de tela</b> usamos <code>.sr-only</code>. Combine <code>.sr-only</code> e <code>.sr-only-focusable</code> para mostrar o elemento novamente quando estiver focado (por exemplo, por um usuário que usa apenas o teclado). </p>
+                <p class="text-center"><code>< a class="sr-only sr-only-focusable" href="#content">Skip to main content< / a ></code></p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Dimensionamento</p>
+    <p class="text-center"><code>w-X</code>para width, e <code>h-X</code>para height</p>
+    <p class="text-center">No bootstrap, os tamanhos (X) são trabalhados em porcentagem, podendo ser utilizados os atributos <code>height</code>e<code>width</code></p>
+    <p class="text-center">A porcentagem é baseada no tamanho do elemento pai, no caso do exemplo, o elemento pai possui 12 colunas</p>
+    <p class="text-center">Para definir o tamanho máximo do elemento, basta utilizar <code>mw-X</code>e<code>mh-X</code></p>
+
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="p-3 mb-2 w-25 bg-primary"></div>
+                <div class="p-3 mb-2 w-50 bg-secondary"></div>
+                <div class="p-3 mb-2 w-75 bg-success"></div>
+                <div class="p-3 mb-2 w-100 bg-danger"></div>
+            </div>
+        </div>
+    </div>
+
+    <p class="mt-3 text-center font-weight-bold">Na vertical</p>
+    <p class="text-center"><code>d-inline-block</code></p>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col bg-warning" style="height:300px;">
+                <div class="p-3 mb-2 d-inline-block h-25 bg-primary"></div>
+                <div class="p-3 mb-2 d-inline-block h-50 bg-secondary"></div>
+                <div class="p-3 mb-2 d-inline-block h-75 bg-success"></div>
+                <div class="p-3 mb-2 d-inline-block h-100 bg-danger"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Espaçamento</p>
+    <p class="text-center"><code>m</code>e<code>p</code></p>
+    <p class="text-center">Utilizado para espaçamento tanto de <code>padding</code>quanto de<code>margin</code></p>
+
+    <p class="text-center font-weight-bold">Lados</p>
+    <p class="text-center"><code>t</code>para top</p>
+    <p class="text-center"><code>b</code>para bottom</p>
+    <p class="text-center"><code>l</code>para left</p>
+    <p class="text-center"><code>r</code>para right</p>
+    <p class="text-center"><code>x</code>para axis-x</p>
+    <p class="text-center"><code>y</code>para axis-y</p>
+
+    <p class="text-center font-weight-bold">Tamanhos</p>
+    <p class="text-center"><code>0</code>- para remover o padding ou margin</p>
+    <p class="text-center"><code>1</code>- para usar a margin ou <code>padding</code>com valor de <code>$spacer * .25;</code></p>
+    <p class="text-center"><code>2</code>- para usar a margin ou <code>padding</code> com valor de <code>$spacer * .5;</code></p>
+    <p class="text-center"><code>3</code>- para usar a margin ou <code>padding</code> com valor de <code>$spacer;</code></p>
+    <p class="text-center"><code>4</code>- para usar a margin ou <code>padding</code> com valor de <code>$spacer * 1.5;</code></p>
+    <p class="text-center"><code>5</code>- para usar a margin ou <code>padding</code> com valor de <code>$spacer * 3;</code></p>
+    <p class="text-center"><code>auto</code>- para usar a margin com valor de <code>auto</code>.</p>
+
+    <br>
+
+    <p class="text-center font-italic"> visualizar os exemplos abaixo com a ajuda do inspertor de elementos do navegador</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col p-0 bg-primary"><p class="text-white">p-0</p>
+            </div>
+            <div class="col p-1 bg-primary"><p class="text-white">p-1</p>
+            </div>
+            <div class="col p-2 bg-primary"><p class="text-white">p-2</p>
+            </div>
+            <div class="col p-3 bg-primary"><p class="text-white">p-3</p>
+            </div>
+            <div class="col p-4 bg-primary"><p class="text-white">p-4</p>
+            </div>
+            <div class="col p-5 bg-primary"><p class="text-white">p-5</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col p-3 m-0 bg-primary"><p class="text-white">m-0</p>
+            </div>
+            <div class="col p-3 m-1 bg-primary"><p class="text-white">m-1</p>
+            </div>
+            <div class="col p-3 m-2 bg-primary"><p class="text-white">m-2</p>
+            </div>
+            <div class="col p-3 m-3 bg-primary"><p class="text-white">m-3</p>
+            </div>
+            <div class="col p-3 m-4 bg-primary"><p class="text-white">m-4</p>
+            </div>
+            <div class="col p-3 m-5 bg-primary"><p class="text-white">m-5</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col p-3 mt-3 bg-primary"><p class="text-white">mt</p>
+            </div>
+            <div class="col p-3 mb-3 bg-primary"><p class="text-white">mb</p>
+            </div>
+            <div class="col p-3 ml-3 bg-primary"><p class="text-white">ml</p>
+            </div>
+            <div class="col p-3 mr-3 bg-primary"><p class="text-white">mr</p>
+            </div>
+            <div class="col p-3 mx-3 bg-primary"><p class="text-white">mx</p>
+            </div>
+            <div class="col p-3 my-3 bg-primary"><p class="text-white">my</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 p-3 my-3 mx-auto bg-primary">
+                <p class="text-white">Para centralizar este elemento foi utilizado a classe <code>mx-auto</code></p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Texto</p>
+    <p class="text-center"><code>text-justify</code></p>
+    <p class="text-center"><code>text-center</code></p>
+    <p class="text-center"><code>text-right</code></p>
+    <p class="text-center"><code>text-left</code></p>
+    <p class="text-center"><code>text-truncate</code>- só ocupa o tamanho permitido pela <code>col</code> do elemento pai</p>
+    <p class="text-center"><code>text-lowercase</code></p>
+    <p class="text-center"><code>text-uppercase</code></p>
+    <p class="text-center"><code>text-capitalize</code></p>
+    <p class="text-center"><code>font-weight-bold</code></p>
+    <p class="text-center"><code>font-weight-normal</code></p>
+    <p class="text-center"><code>font-weight-light</code></p>
+    <p class="text-center"><code>font-italic</code></p>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <p class="text-center font-weight-bold">text-justify</p>
+                <p class="text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eum illo vitae ratione dolores excepturi, magni voluptatum totam
+                    incidunt dolor amet soluta omnis animi voluptates, itaque beatae
+                    nam placeat labore error.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eum illo vitae ratione dolores excepturi, magni voluptatum totam
+                    incidunt dolor amet soluta omnis animi voluptates, itaque beatae
+                    nam placeat labore error.
+                </p>
+                <p class="font-weight-bold text-truncate">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="font-weight-bold text-truncate text-lowercase">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="font-weight-bold text-truncate text-uppercase">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="font-weight-bold text-truncate text-capitalize">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="text-truncate font-weight-bold">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="text-truncate font-weight-normal">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="text-truncate font-weight-light">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+                <p class="text-truncate font-italic">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="col-3">
+                <p class="text-center font-weight-bold">text-center</p>
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eum illo vitae ratione dolores excepturi, magni voluptatum totam
+                    incidunt dolor amet soluta omnis animi voluptates, itaque beatae
+                    nam placeat labore error.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eum illo vitae ratione dolores excepturi, magni voluptatum totam
+                    incidunt dolor amet soluta omnis animi voluptates, itaque beatae
+                    nam placeat labore error.
+            </div>
+            <div class="col-3">
+                <p class="text-center font-weight-bold">text-right</p>
+                <p class="text-right">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eum illo vitae ratione dolores excepturi, magni voluptatum totam
+                    incidunt dolor amet soluta omnis animi voluptates, itaque beatae
+                    nam placeat labore error.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eum illo vitae ratione dolores excepturi, magni voluptatum totam
+                    incidunt dolor amet soluta omnis animi voluptates, itaque beatae
+                    nam placeat labore error.
+                </p>
+            </div>
+            <div class="col-3">
+                <p class="text-center font-weight-bold">text-left</p>
+                <p class="text-left">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eum illo vitae ratione dolores excepturi, magni voluptatum totam
+                    incidunt dolor amet soluta omnis animi voluptates, itaque beatae
+                    nam placeat labore error.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Eum illo vitae ratione dolores excepturi, magni voluptatum totam
+                    incidunt dolor amet soluta omnis animi voluptates, itaque beatae
+                    nam placeat labore error.
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Alinhamento vertical</p>
+
+    <p class="text-center">Você pode facilmente realizar o alinhamento vertical de elementos no Bootstrap tais como: inline, inline-block, inline-table e table. </p>
+    <p class="text-center">É importante saber que o alinhamento vertical afeta apenas os elementos  inline, inline-block, inline-table e as células da table.</p>
+    <p class="text-center">As opções disponíveis são:</p>
+    <p class="text-center"><code>.align-baseline</code></p>
+    <p class="text-center"><code>.align-top</code></p>
+    <p class="text-center"><code>.align-middle</code></p>
+    <p class="text-center"><code>.align-bottom</code></p>
+    <p class="text-center"><code>.align-text-bottom</code></p>
+    <p class="text-center"><code>.align-text-top</code></p>
+
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <span class="align-baseline">baseline</span>
+                <span class="align-top">top</span>
+                <span class="align-middle">middle</span>
+                <span class="align-bottom">bottom</span>
+                <span class="align-text-top">text-top</span>
+                <span class="align-text-bottom">text-bottom</span>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-center">Exemplos de uso nas células de uma tabela:</p>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table style="height: 100px;">
+                    <tbody>
+                      <tr>
+                        <td class="align-baseline">baseline</td>
+                        <td class="align-top">top</td>
+                        <td class="align-middle">middle</td>
+                        <td class="align-bottom">bottom</td>
+                        <td class="align-text-top">text-top</td>
+                        <td class="align-text-bottom">text-bottom</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Visibilidade</p>
+    <p class="text-center">Você pode controlar a visibilidade de um elemento, sem modificar a exibição, com os utilitários de visibilidade.</p>
+    <p class="text-center">Eles são úteis para ocultar o conteúdo da maioria dos usuários, mas ainda mantendo-os para os leitores de tela.</p>
+    <p class="text-center">Aplique <code>.visible</code>ou, <code>.invisible</code>conforme necessário:</p>
+
+    <p class="text-center"><code><div class="visible">...</div></code></p>
+    <p class="text-center"><code><div class="invisible">...</div></code></p>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Introdução as bibliotecas de ícones externos</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center">O Bootstrap não inclui uma biblioteca de ícones por padrão, mas temos algumas opções externas e que podem suprir esta carência. Embora a maioria dos conjuntos de ícones inclua vários formatos de arquivo, o Bootstrap recomenda as implementações de SVG para sua melhor acessibilidade e suporte de vetores.</p>
+                <p class="mt-3 text-center font-weight-bold">Bibliotecas Preferidas:</p>
+                <ul class="mt-3 nav justify-content-center">
+                    <li class="nav-item">
+                        <a href="https://useiconic.com/open/" class="nav-link">Iconic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://primer.style/octicons/" class="nav-link">Octicons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://www.entypo.com/" class="nav-link">Entypo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://fontawesome.com/" class="nav-link">Font Awesome</a>
+                    </li>
+                </ul>
+                <p class="mt-3 text-center font-weight-bold">Outras Opções:</p>
+                <ul class="mt-3 nav justify-content-center">
+                    <li class="nav-item">
+                        <a href="https://github.com/danklammer/bytesize-icons" class="nav-link">Bytesize</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://fonts.google.com/icons?selected=Material+Icons" class="nav-link">Google Material Icons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://ionic.io/ionicons" class="nav-link">Ionicons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://feathericons.com/" class="nav-link">Feather</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://demo.amitjakhu.com/dripicons/" class="nav-link">Dripicons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://ikons.piotrkwiatkowski.co.uk/" class="nav-link">Ikons</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p class="h1 text-center font-weight-bold">Instalando Biblioteca de ícones</p>
+    <p class="text-center">Para alterar height e width, utilizar classes CSS</p>
+    <p class="text-center">Para instalar os ícones como Fonte, é necessário adicionar o <code>link href</code>na <code>head</code>de nosso documento, abaixo do link do bootstrap</p>
+    <p class="text-center">Após a instalação, é possívei utilizar os ícones através de um atributo <code>span</code></p>
+    <p class="text-center">O ícone acompanha a cor do texto que estiver sendo executado</p>
+
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-secondary">
+                    <img src="./iconic/svg/key.svg" style="width: 20px;" alt="Icone Chave"> Acesso
+                </button>
+                <button class="btn btn-secondary">
+                    <img src="./iconic/svg/pie-chart.svg" style="width: 20px;" alt="Icone Grafico"> Gráfico
+                </button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <button class="btn btn-primary">
+                    <span class="oi oi-tag" title="icone tag" aria-hidden="true"></span> Tag
+                </button>
+                <button class="btn btn-warning">
+                    <span class="oi oi-warning" title="icone atenção" aria-hidden="true"></span> Atenção
+                </button>
+            </div>
+        </div>
+    </div>
 
 
     <hr>
+    <p class="h1 text-center font-weight-bold">Observações</p>
     <p class="mt-5 mb-3"><b>*</b>Utilizar <code>text-center</code> para alinhamento central</p>
-    <p class="mt-3 mb-5"><b>*</b>Utilizar <code>mx-auto</code> na <code>col</code>para centralizar.</p>
+    <p class="mt-3 mb-3"><b>*</b>Utilizar <code>mx-auto</code> na <code>col</code>para centralizar.</p>
+    <p class="mt-3 mb-3">*Na seção de <code>form</code>foi utilizado<code>float-right</code>para alinhar o botão CTA a Direita</p>
+    <p class="mt-3 mb-3">*<code>sr-only</code>é uma maneira de apresentar conteúdos que só são considerados por leitores de tela (que são browsers que lêem o conteúdo para quem não enxerga).</p>
+    <p class="mt-3 mb-5">*<code>role</code>Em português significa Papel, num sentido de cargo/oficio daquele elemento. Com essa semântica os navegadores podem prover mais acessibilidade para alguns elementos, já que eles passam a conhecer o papel dos elementos no documento..</p>
+
+
     </main>
 
     <footer>
@@ -2178,7 +4124,31 @@
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <!-- Meu JS. O atributo defer diz ao navegador para executar o script apenas quando a análise do html estiver finalizada -->
-    <script src="./js/index.js" defer></script>
+    #
+
+    <!-- SCRIPT POPOVER -->
+    <!-- No script abaixo dizemos que a ação que ativaria o efeito seria o data-toggle -->
+    <script type="text/javascript">
+        $(function(){
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+
+    <!-- SCRIPT MODAL -->
+    <!-- É possível puxar o trigger pelo ID ou pela própria classe MODAL -->
+    <!-- Vou manter desativo, pois se não, ele aparece toda ver que atualizo a page -->
+    <!-- <script type="text/javascript">
+            $('.modal').modal('show')
+         </script> -->
+
+    <!-- SCRIPT TOOLTIP -->
+    <!-- No script abaixo dizemos que a ação que ativaria o efeito seria o data-toggle -->
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
 
 </body>
 </html>
