@@ -34,3 +34,17 @@ p {
     caption-side: bottom;
     text-align: center;
 }
+
+.bordas {
+    background-color: #563d7c;
+}
+
+.row-borda {
+    margin-bottom: 10px;
+}
+
+.col-borda {
+    padding: 50px;
+    margin-right: 5px;
+
+}
